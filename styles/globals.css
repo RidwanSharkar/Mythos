@@ -10,7 +10,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ffbc7e;
   }
 }
 
@@ -18,4 +18,37 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/images/mythos2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
+.selected-item {
+  box-shadow: 0 0 10px #ffd700,
+              0 0 20px #ffd700,
+              0 0 30px #ffd700,
+              0 0 40px #ffd700;
+  border-color: #ffd700 !important;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #ffd700,
+                0 0 20px #ffd700,
+                0 0 30px #ffd700;
+  }
+  50% {
+    box-shadow: 0 0 15px #ffd700,
+                0 0 25px #ffd700,
+                0 0 35px #ffd700,
+                0 0 45px #ffd700;
+  }
+  100% {
+    box-shadow: 0 0 10px #ffd700,
+                0 0 20px #ffd700,
+                0 0 30px #ffd700;
+  }
 }

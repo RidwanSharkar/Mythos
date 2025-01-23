@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "next build && touch out/.nojekyll"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.5"
+    "next": "15.1.5",
+    "gsap": "^3.12.7",
+    "@types/gsap": "^1.20.2"
   },
   "devDependencies": {
     "typescript": "^5",
@@ -23,5 +27,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
     "@eslint/eslintrc": "^3"
-  }
+  },
+  "workspaces": ["mythos"]
 }
