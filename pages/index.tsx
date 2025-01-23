@@ -153,13 +153,13 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     id: 29,
     title: 'Leviathan',
     description: 'Class: Blade\nElement: Draconic/Fire\nAlignment: Neutral Evil',
-    image: '/images/Leviathan.png',
+    image: '/Mythos/images/Leviathan.png',
   },
   {
     id: 30,
     title: 'Grove Warden',
     description: 'Class: Blade\nElement: Nature/Divine\nAlignment: Lawful Good',
-    image: '/images/GroveWarden.png',
+    image: '/Mythos/images/GroveWarden.png',
   },
   {
     id: 31,
