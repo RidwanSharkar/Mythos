@@ -18,7 +18,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('/Mythos/images/mythos2.png');
+  background-image: url('/images/mythos2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
