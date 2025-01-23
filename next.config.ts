@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/Mythos',
+  assetPrefix: '/Mythos/',
 };
 
 export default nextConfig;
