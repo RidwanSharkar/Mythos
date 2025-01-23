@@ -1,4 +1,4 @@
- import { GalleryItem } from '@/types/gallery';
+import { GalleryItem } from '@/types/gallery';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -45,7 +45,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
             </button>
           </div>
           
-          <div className="relative w-full h-[300px] mb-4">
+          <div className="relative w-full h-[360px] mb-4">
             {/* Main Image Display */}
             <div className="relative w-full h-full">
               <Image
@@ -97,7 +97,16 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
             </div>
           )}
           
-          <p className="mb-4 flex-grow">{item.description}</p>
+          <p className="mb-4 flex-grow whitespace-pre-line">
+            {item.description.split('\n').map((line, index) => {
+              const [label, value] = line.split(': ');
+              return (
+                <span key={index} className="block mb-2">
+                  <strong>{label}</strong>: {value}
+                </span>
+              );
+            })}
+          </p>
         </div>
       )}
     </div>
