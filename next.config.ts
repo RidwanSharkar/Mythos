@@ -13,8 +13,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/Mythos' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Mythos/' : '',
+  basePath: '/Mythos',
+  assetPrefix: '/Mythos/',
+  trailingSlash: true,
 };
 
 export default nextConfig;

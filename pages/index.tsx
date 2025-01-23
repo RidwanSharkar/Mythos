@@ -49,7 +49,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     id: 5,
     title: 'Eden',
     description: 'Class: Bow, Demigod\nElement: Nature\nAlignment: Neutral Good',
-    image: '/images/Eden.png',
+    image: '/Mythos/images/Eden.png',
   },
   {
     id: 6,
