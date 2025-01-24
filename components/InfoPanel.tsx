@@ -101,12 +101,12 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
   if (!item) return null;
 
   return isMobile ? (
-    // Mobile Layout
     <div className="mobile-info-panel">
-      <PanelContent />
+      <div className="mobile-body-container">
+        <PanelContent />
+      </div>
     </div>
   ) : (
-    // Desktop Layout
     <div
       className="fixed top-0 bottom-0 w-[400px] bg-background/80 backdrop-blur-sm shadow-lg p-5 transition-[right] duration-500 ease-in-out"
       style={{
