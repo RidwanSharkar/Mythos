@@ -26,30 +26,30 @@ body {
 }
 
 .selected-item {
-  box-shadow: 0 0 10px #ffd700,
-              0 0 20px #ffd700,
-              0 0 30px #ffd700,
-              0 0 40px #ffd700;
+  box-shadow: 0 0 20px #ffd700,
+              0 0 40px #ffd700,
+              0 0 60px #ffd700,
+              0 0 80px #ffd700;
   border-color: #ffd700 !important;
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 10px #ffd700,
-                0 0 20px #ffd700,
-                0 0 30px #ffd700;
+    box-shadow: 0 0 20px #ffd700,
+                0 0 40px #ffd700,
+                0 0 60px #ffd700;
   }
   50% {
-    box-shadow: 0 0 15px #ffd700,
-                0 0 25px #ffd700,
-                0 0 35px #ffd700,
-                0 0 45px #ffd700;
+    box-shadow: 0 0 30px #ffd700,
+                0 0 50px #ffd700,
+                0 0 70px #ffd700,
+                0 0 90px #ffd700;
   }
   100% {
-    box-shadow: 0 0 10px #ffd700,
-                0 0 20px #ffd700,
-                0 0 30px #ffd700;
+    box-shadow: 0 0 20px #ffd700,
+                0 0 40px #ffd700,
+                0 0 60px #ffd700;
   }
 }
 
@@ -64,7 +64,7 @@ body {
   /* Mobile-specific container for GalleryWheel */
   .mobile-gallery-container {
     position: fixed;
-    top: 0;
+    top: 15vh;
     left: 0;
     width: 100%;
     height: 70vh;
@@ -72,19 +72,19 @@ body {
     align-items: center;
     justify-content: center;
     transform: scale(0.3);
-    transform-origin: center 30%;
+    transform-origin: center center;
     z-index: 10;
   }
 
   /* Mobile-specific InfoPanel styles */
   .mobile-info-panel {
-    position: absolute;
-    top: 60vh;
-    left: 0;
+    position: absolute !important;
+    top: 60vh !important;
+    left: 0 !important;
     width: 100% !important;
     height: auto !important;
     min-height: 60vh;
-    padding-bottom: 2rem;
+    padding-bottom: 10rem;
     background: var(--background) !important;
     right: 0 !important;
     z-index: 20;
@@ -95,6 +95,7 @@ body {
     height: 100vh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 40vh;
+    padding-bottom: 60vh;
+    position: relative;
   }
 }

@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { GalleryItem } from '@/types/gallery';
+import PlasmaEffect from './PlasmaEffect';
 
 interface GalleryLayer {
   items: GalleryItem[];
@@ -18,9 +19,23 @@ export default function GalleryWheel({ layers, onSelectItem }: GalleryWheelProps
   const itemRefs = useRef<(HTMLDivElement | null)[][]>(layers.map(() => []));
   const [layerRotations, setLayerRotations] = useState<number[]>(layers.map(() => 0));
   const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
+  const [selectedItemPosition, setSelectedItemPosition] = useState<{ x: number; y: number } | null>(null);
 
   const handleItemClick = (item: GalleryItem, itemIndex: number, layerIndex: number) => {
     setSelectedItemId(item.id);
+    
+    // Get the current layer's radius
+    const radius = layers[layerIndex].radius;
+    
+    // Set position to 12 o'clock of the current layer circle
+    // Add a slight delay to allow for rotation animation
+    setTimeout(() => {
+      setSelectedItemPosition({
+        x: 600, // Center X (half of container width)
+        y: 600 - radius // Y position at 12 o'clock (center Y - radius)
+      });
+    }, 500); // 500ms delay
+    
     const anglePerItem = 360 / layers[layerIndex].items.length;
     const targetRotation = 270 - (itemIndex * anglePerItem);
     
@@ -50,6 +65,7 @@ export default function GalleryWheel({ layers, onSelectItem }: GalleryWheelProps
 
   return (
     <div className="relative w-[1200px] h-[1200px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <PlasmaEffect position={selectedItemPosition} />
       <div className="absolute inset-0">
         {layers.map((layer, layerIndex) => (
           <div
