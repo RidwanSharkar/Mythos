@@ -291,17 +291,19 @@ export default function Home() {
       </div>
 
       {/* Mobile layout */}
-      <div className="block md:hidden mobile-gallery-container">
-        <GalleryWheel 
-          layers={galleryLayers}
-          onSelectItem={(item) => handleSelectItem(item)}
+      <div className="block md:hidden mobile-scroll-container">
+        <div className="mobile-gallery-container">
+          <GalleryWheel 
+            layers={galleryLayers}
+            onSelectItem={(item) => handleSelectItem(item)}
+          />
+        </div>
+        
+        <InfoPanel 
+          item={selectedItem} 
+          onClose={() => setSelectedItem(null)} 
         />
       </div>
-      
-      <InfoPanel 
-        item={selectedItem} 
-        onClose={() => setSelectedItem(null)} 
-      />
     </div>
   );
 }
