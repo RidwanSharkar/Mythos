@@ -18,7 +18,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 0,
     title: '𝒟𝑒𝓈𝓉𝒾𝓃𝓎',
-    description: 'Class: Spellblade\nElement: Divine\nAlignment: Neutral Good',
+    description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Destiny.png',
   },
   {
@@ -36,13 +36,13 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 3,
     title: '𝒢𝓇𝑒𝑒𝒹',
-    description: 'Class: Greataxe\nElement: Imperial Martial, Mechanical\nAlignment: Neutral Evil',
+    description: 'Class: Greataxe\nElement: Duelist Martial, Mechanical\nAlignment: Neutral Evil',
     image: '/images/Greed2.png',
   },
   {
     id: 4,
     title: '𝐵𝓁𝑜𝑜𝒹𝓂𝑜𝑜𝓃',
-    description: 'Class: Greatsword\nElement: Vampiric\nAlignment: Neutral Evil',
+    description: 'Class: Greatsword\nElement: Psionic, Vampiric\nAlignment: Neutral Evil',
     image: '/images/Bloodmoon.png',
   },
   {
@@ -54,7 +54,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 6,
     title: '𝒲𝓇𝒶𝓉𝒽',
-    description: 'Class: Runeblade\nElement: Chaos\nAlignment: Chaotic Evil',
+    description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
   },
   {
@@ -84,13 +84,13 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 11,
     title: '𝒫𝓇𝒾𝒹𝑒',
-    description: 'Class: Trident-Spear\nElement: Imperial Martial\nAlignment: Lawful Good',
+    description: 'Class: Trident-Spear\nElement: Duelist Martial\nAlignment: Chaotic Neutral',
     image: '/images/Pride.png',
   },
   {
     id: 46,
-    title: '𝒮𝑜𝓁𝒶𝓇 𝐿𝒶𝓃𝒸𝑒',
-    description: 'Class: Greatsword\nElement: Radiant, Nature\nAlignment: Lawful/Neutral Good',
+    title: '𝒮𝑜𝓁𝒶𝓇 𝐿𝒶𝓃𝒸𝑒 + 𝒵𝑒𝓅𝒽𝓎𝓇',
+    description: 'Class: Greatsword\nElement: Radiant + Wind\nAlignment: Lawful Good + Neutral Good',
     image: '/images/Duo1.png',
     images: [
       '/images/Ash.png',
@@ -100,14 +100,14 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 47,
     title: '𝒪𝒶𝓉𝒽𝒷𝓁𝒶𝒹𝑒',
-    description: 'Class: Shield + Oathblade\nElement: Holy\nAlignment: Lawful Good',
+    description: 'Class: Shield + Oathblade\nElement: Radiant\nAlignment: Lawful Good',
     image: '/images/Divine.png',
   },
   {
     id: 48,
     title: ' 𝒲𝒽𝒾𝓉𝑒 𝐿𝒾𝑔𝒽𝓉𝓃𝒾𝓃𝑔',
-    description: 'Class: Axe\nElement: Lightning, Imperial Martial\nAlignment: Lawful Good',
-    image: '/images/WhiteLightning.png',
+    description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
+    image: '/images/WhiteLightning.png', 
   },
   {
     id: 49,
@@ -129,14 +129,14 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 52,
-    title: '𝐸𝓋𝑒𝓃𝓉 𝐻𝑜𝓇𝒾𝓏𝑜𝓃 + 𝒜𝒸𝒸𝓇𝑒𝓉𝒾𝑜𝓃 𝒟𝒾𝓈𝓀',
-    description: 'Class: Twin-Blades\nElements: Temporal + Psionic\nAlignment: Chaotic Good + Chaotic Evil',
+    title: '𝐸𝓋𝑒𝓃𝓉 𝐻𝑜𝓇𝒾𝓏𝑜𝓃 + 𝒯𝑒𝓂𝓅𝑜𝓇𝒶𝓁 𝑅𝑒𝒶𝓋𝑒𝓇',
+    description: 'Class: Twin-Blades\nElements: Void + Psionic\nAlignment: Chaotic Good + Chaotic Evil',
     image: '/images/Reavers.png',
   },
   {
     id: 53,
     title: '𝑀𝒶𝑒𝓁𝓈𝓉𝓇𝑜𝓂',
-    description: 'Class: War Hammer, Maul\nElement: Lightning\nAlignment: Chaotic Neutral',
+    description: 'Class: War Hammer, Maul\nElement: Lightning, Thunder\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
   },
 ];
@@ -146,19 +146,19 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 28,
     title: '𝐸𝓇𝑒𝒷𝓊𝓈',
-    description: 'Class: Cleaver\nElement: Cosmic/Void\nAlignment: True Neutral',
+    description: 'Class: Cleaver\nElement: Void\nAlignment: True Neutral',
     image: '/images/Erebus.png',
   },
   {
     id: 29,
     title: '𝐿𝑒𝓋𝒾𝒶𝓉𝒽𝒶𝓃',
-    description: 'Class: Guandao\nElement: Draconic/Fire\nA lignment: Neutral Evil',
+    description: 'Class: Guandao\nElement: Draconic, Fire\nA lignment: Neutral Evil',
     image: '/images/Leviathan.png',
   },
   {
     id: 30,
     title: '𝒢𝓇𝑜𝓋𝑒 𝒲𝒶𝓇𝒹𝑒𝓃',
-    description: 'Class: Blade\nElement: Nature/Divine\nAlignment: Lawful Good',
+    description: 'Class: Blade\nElement: Nature, Divine\nAlignment: Lawful Good',
     image: '/images/GroveWarden.png',
   },
   {
@@ -170,7 +170,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 32,
     title: '𝒮𝓅𝒾𝓃𝒶𝓁 𝒯𝒶𝓅',
-    description: 'Class: Blade\nElement: Necro\nAlignment: Chaotic Evil',
+    description: 'Class: Blade\nElement: Necro, Frost\nAlignment: Chaotic Evil',
     image: '/images/SpinalTap2.png',
   },
   {
@@ -191,7 +191,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 35,
     title: '𝐸𝓈𝒸𝒽𝒶𝓉𝑜𝓃',
-    description: 'Class: Deity\nElement: Divine, Air\nAlignment: True Neutral.',
+    description: 'Class: Deity\nElement: Divine, Wind\nAlignment: True Neutral.',
     image: '/images/DivineWind.png',
   },
   {
@@ -282,7 +282,7 @@ export default function Home() {
     <div className={`${geistSans.variable} ${geistMono.variable} h-screen relative overflow-hidden`}>
       <div className="absolute inset-0 bg-black/50"></div>
       
-      <div className="relative z-10 scale-[0.7250] origin-center w-full h-full"> {/* SCALE */}
+      <div className="relative z-10 scale-[0.70] origin-center w-full h-full"> {/* SCALE */}
         <GalleryWheel 
           layers={galleryLayers}
           onSelectItem={(item) => handleSelectItem(item)}
