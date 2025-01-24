@@ -196,7 +196,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 36,
-    title: '𝒮𝒶𝓂𝓈𝒶𝓇𝒶',
+    title: '𝒮𝒶ṃ𝓈ā𝓇𝒶',
     description: 'Class: Deity\nElement: Divine, Nature\nAlignment: Neutral Good',
     image: '/images/Samsara.png',
   },
@@ -233,19 +233,19 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 42,
     title: '𝒫𝓇𝒾𝓂𝒶𝓁',
-    description: 'Class: Amulet\nElement: Nature\nAlignment: True Neutral',
+    description: 'Class: Pendant\nElement: Nature\nAlignment: True Neutral',
     image: '/images/Tiger.png',
   },
   {
     id: 43,
     title: '𝐻𝑒𝒶𝓇𝓉𝓂𝒾𝓃𝒹',
-    description: 'Class: Amulet\nElement: Psionic\nAlignment: Chaotic Neutral',
+    description: 'Class: Pendant\nElement: Psionic\nAlignment: Chaotic Neutral',
     image: '/images/Heartmind.png',
   },
   {
     id: 44,
     title: '𝐻𝓎𝓁𝒾𝒶𝓃 𝒮𝒽𝒾𝑒𝓁𝒹 + 𝑀𝒶𝓈𝓉𝑒𝓇 𝒮𝓌𝑜𝓇𝒹',
-    description: 'Class: Amulet, Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
+    description: 'Class: Pendant, Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
     image: '/images/Zelda.png',
   },
   {
@@ -282,7 +282,16 @@ export default function Home() {
     <div className={`${geistSans.variable} ${geistMono.variable} h-screen relative overflow-hidden`}>
       <div className="absolute inset-0 bg-black/50"></div>
       
-      <div className="relative z-10 scale-[0.70] origin-center w-full h-full"> {/* SCALE */}
+      {/* Desktop layout */}
+      <div className="hidden md:block relative z-10 scale-[0.65] origin-center w-full h-full">
+        <GalleryWheel 
+          layers={galleryLayers}
+          onSelectItem={(item) => handleSelectItem(item)}
+        />
+      </div>
+
+      {/* Mobile layout */}
+      <div className="block md:hidden mobile-gallery-container">
         <GalleryWheel 
           layers={galleryLayers}
           onSelectItem={(item) => handleSelectItem(item)}

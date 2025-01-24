@@ -28,7 +28,11 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
 
   return (
     <div
-      className="fixed top-0 bottom-0 w-[400px] bg-background/80 backdrop-blur-sm shadow-lg p-5 transition-[right] duration-500 ease-in-out"
+      className={`
+        fixed top-0 bottom-0 w-[400px] bg-background/80 backdrop-blur-sm shadow-lg p-5 transition-[right] duration-500 ease-in-out
+        md:fixed md:top-0 md:bottom-0 md:w-[400px]
+        mobile-info-panel
+      `}
       style={{
         right: item ? '0px' : '-400px',
       }}

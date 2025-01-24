@@ -55,19 +55,34 @@ body {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  /* GalleryWheel size for mobile */
-  .gallery-wheel {
-    width: 100%;
-    height: 100%;
-    transform: scale(0.5); /* Test scale */
+  body {
+    min-height: 100vh;
+    overflow-y: auto;
   }
 
-  /* InfoPanel position for mobile */
-  .info-panel {
+  /* Mobile-specific container for GalleryWheel */
+  .mobile-gallery-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50%; /* Test height*/
-    bottom: 0;
-    right: auto;
-    transition: bottom 0.5s ease-in-out;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.35);
+    transform-origin: center center;
+  }
+
+  /* Mobile-specific InfoPanel styles */
+  .mobile-info-panel {
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 40vh;
+    background: var(--background) !important;
+    right: 0 !important;
   }
 }
