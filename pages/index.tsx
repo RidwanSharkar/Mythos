@@ -60,7 +60,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 7,
     title: '𝒢𝓁𝓊𝓉𝓉𝑜𝓃𝓎 & 𝐿𝓊𝓈𝓉',
-    description: 'Class: Runeblade\nElements: Draconic, Necro\nAlignment: Neutral Evil',
+    description: 'Class: Runeblade + Spellblade\nElements: Necro + Fire\nAlignment: Neutral Evil + Chaotic Neutral',
     image: '/images/Duo2.png',
   },
   {
@@ -77,8 +77,8 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 10,
-    title: '𝐸𝓃𝓋𝓎',
-    description: 'Class: Runeblade\nElement: Frost, Necro\nAlignment: Chaotic Evil',
+    title: '𝐸𝓃𝓋𝓎 + 𝐹𝓇𝑜𝓈𝓉𝒷𝒾𝓉𝑒',
+    description: 'Class: Runeblade\nElement: Necro + Frost\nAlignment: Chaotic Evil + Chaotic Neutral',
     image: '/images/EnvyFrostbite.png',
   },
   {
@@ -245,7 +245,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 44,
     title: '𝐻𝓎𝓁𝒾𝒶𝓃 𝒮𝒽𝒾𝑒𝓁𝒹 + 𝑀𝒶𝓈𝓉𝑒𝓇 𝒮𝓌𝑜𝓇𝒹',
-    description: 'Class: Amulet\nElement: Zelda\nAlignment: Lawful Good',
+    description: 'Class: Amulet, Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
     image: '/images/Zelda.png',
   },
   {
