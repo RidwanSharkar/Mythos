@@ -1,6 +1,7 @@
 import { GalleryItem } from '@/types/gallery';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 interface InfoPanelProps {
   item: GalleryItem | null;
@@ -46,43 +47,55 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
         </button>
       </div>
       
-      <div className="relative w-full h-[360px] mb-4">
-        <div className="relative w-full h-full">
-          <Image
-            src={item?.images?.[currentImageIndex] || item?.image || ''}
-            alt={item?.title || ''}
-            fill
-            className="object-cover rounded-lg"
+      {/* Special case for Monarch item with Instagram video */}
+      {item?.id === 38 ? (
+        <div className="flex justify-center mb-4">
+          <InstagramEmbed 
+            url="https://www.instagram.com/p/C8cQwlWAwXh/"
+            width={325}
           />
+        </div>
+      ) : (
+        <>
+          <div className="relative w-full h-[360px] mb-4">
+            <div className="relative w-full h-full">
+              <Image
+                src={item?.images?.[currentImageIndex] || item?.image || ''}
+                alt={item?.title || ''}
+                fill
+                className="object-cover rounded-lg"
+              />
+              
+              {item?.images && item.images.length > 1 && (
+                <>
+                  <button onClick={handlePrevImage} className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">←</button>
+                  <button onClick={handleNextImage} className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">→</button>
+                </>
+              )}
+            </div>
+          </div>
           
           {item?.images && item.images.length > 1 && (
-            <>
-              <button onClick={handlePrevImage} className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">←</button>
-              <button onClick={handleNextImage} className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">→</button>
-            </>
+            <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
+              {item.images.map((img, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`relative w-16 h-16 flex-shrink-0 rounded-md overflow-hidden ${
+                    currentImageIndex === index ? 'ring-2 ring-foreground' : ''
+                  }`}
+                >
+                  <Image
+                    src={img}
+                    alt={`${item.title} thumbnail ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </button>
+              ))}
+            </div>
           )}
-        </div>
-      </div>
-      
-      {item?.images && item.images.length > 1 && (
-        <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
-          {item.images.map((img, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImageIndex(index)}
-              className={`relative w-16 h-16 flex-shrink-0 rounded-md overflow-hidden ${
-                currentImageIndex === index ? 'ring-2 ring-foreground' : ''
-              }`}
-            >
-              <Image
-                src={img}
-                alt={`${item.title} thumbnail ${index + 1}`}
-                fill
-                className="object-cover"
-              />
-            </button>
-          ))}
-        </div>
+        </>
       )}
       
       <p className="mb-4 flex-grow whitespace-pre-line">
@@ -94,6 +107,13 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
             </span>
           );
         })}
+        
+        {/* Display Price separately with USD format */}
+        {item?.price && (
+          <span className="block mb-2">
+            <strong>Price</strong>: ${parseInt(item.price).toLocaleString()}
+          </span>
+        )}
       </p>
     </div>
   );

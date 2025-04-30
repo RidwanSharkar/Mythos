@@ -9,6 +9,7 @@ export interface GalleryItem {
   image: string;
   images?: string[];
   elements?: ElementType[];
+  price?: string;
 }
 
 export const ELEMENT_COLORS: Record<ElementType, string> = {
