@@ -30,7 +30,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
         5: 'https://www.instagram.com/p/CIZ9lYvj7lz/',  // Eden
         6: 'https://www.instagram.com/p/CVS_1MHDFQv/',  // Wrath
         7: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Lust
-        8: 'https://www.instagram.com/p/CI3clqYjG8c/', // Empyrean
+        8: 'https://www.instagram.com/p/CONzKIXDkug/', // Frostbite
         9: 'https://www.instagram.com/p/CJeOkvDDolJ/', // Emerald Fang
         11: 'https://www.instagram.com/p/CIQrI-yjcX-/', // Pride
         46: 'https://www.instagram.com/p/CMzr_wUj0tl/', // Solar Lance
@@ -39,11 +39,11 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
         48: 'https://www.instagram.com/p/Bcf0WwgHbkr/', // White Lightning
         49: 'https://www.instagram.com/p/BZ2ApRWnYjB/', // Scythe
         50: 'https://www.instagram.com/p/BXWKhK2l2-T/', // Phoeenix
-        51: 'https://www.instagram.com/p/CINEqAgjY9C/', // Phoeenix
+        51: 'https://www.instagram.com/p/CINEqAgjY9C/', // Spectre
         52: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Reavers
         53: 'https://www.instagram.com/p/Bj-8quahGCx/', // Maelstrom
         28: 'https://www.instagram.com/p/C9P5jNRA_nR/', // Erebus
-        29: 'https://www.instagram.com/p/CONzKIXDkug/', // Frostbite
+        29: 'https://www.instagram.com/p/BTjhBnlFwfU/', // Set
         30: 'https://www.instagram.com/p/CqLYWcAjIr7/', // Grove Warden
         31: 'https://www.instagram.com/p/CivBplpDPh0/', // Dynasty
         32: 'https://www.instagram.com/p/CcQWSvFjwAi/', // Spinal Tap
@@ -76,7 +76,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
       <div className="instagram-embed-container">
         <InstagramEmbed 
           url={instagramUrl}
-          width={450}
+          width={420}
           captioned={false}
           key={instagramUrl} // Force re-render when URL changes
         />

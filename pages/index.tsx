@@ -78,14 +78,15 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElements: Fire\nAlignment: Chaotic Neutral',
     image: '/images/Duo2.png',
     elements: ['Fire'],
-    price: '175'
+    price: '155'
   },
   {
     id: 8,
-    title: '𝐸𝓂𝓅𝓎𝓇𝑒𝒶𝓃',
-    description: 'Class: Greatsword\nElement: Imperial Martial\nAlignment: Lawful Good',
-    image: '/images/Empyrean.png',
-    elements: ['Martial']
+    title: '𝐹𝓇𝑜𝓈𝓉𝒷𝒾𝓉𝑒',
+    description: 'Class: Runeblade\nElement: Necro + Frost\nAlignment: Chaotic Evil + Chaotic Neutral',
+    image: '/images/Frostbite.png',
+    elements: ['Frost'],
+    price: '255'
   },
   {
     id: 9,
@@ -99,7 +100,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     id: 10,
     title: '𝐸𝓃𝓋𝓎',
     description: 'Class: Runeblade\nElement: Necro + Frost\nAlignment: Chaotic Evil + Chaotic Neutral',
-    image: '/images/EnvyFrostbite.png',
+    image: '/images/Envy.png',
     elements: ['Frost'],
     price: '345'
   },
@@ -191,11 +192,10 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 29,
-    title: '𝐹𝓇𝑜𝓈𝓉𝒷𝒾𝓉𝑒',
-    description: 'Class: Runeblade\nElement: Necro + Frost\nAlignment: Chaotic Evil + Chaotic Neutral',
-    image: '/images/EnvyFrostbite.png',
-    elements: ['Frost'],
-    price: '255'
+    title: 'Full Set',
+    description: 'Tier 1 + Tier 2 Set',
+    image: '/images/Lot.png',
+    price: '595'
   },
   {
     id: 30,
@@ -203,7 +203,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Blade\nElement: Nature, Divine\nAlignment: Lawful Good',
     image: '/images/GroveWarden.png',
     elements: ['Nature'],
-    price: '1050'
+    price: '995'
   },
   {
     id: 31,
@@ -211,7 +211,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Katana\nElement: Imperial Martial\nAlignment: Lawful Neutral',
     image: '/images/Dynasty.png',
     elements: ['Martial'],
-    price: '350'
+    price: '385'
   },
   {
     id: 32,
@@ -227,7 +227,6 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Knife\nElement: Fire\nAlignment: Neutral Good',
     image: '/images/Tribeless.png',
     elements: ['Fire'],
-    price: '375'
   },
 ];
 
