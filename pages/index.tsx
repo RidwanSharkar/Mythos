@@ -194,7 +194,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     id: 29,
     title: 'Full Set',
     description: 'Tier 1 + Tier 2 Set',
-    image: '/images/Lot.png',
+    image: '/images/lot.png',
     price: '595'
   },
   {
