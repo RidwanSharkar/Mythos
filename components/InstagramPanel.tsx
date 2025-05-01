@@ -47,7 +47,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
         30: 'https://www.instagram.com/p/CqLYWcAjIr7/', // Grove Warden
         31: 'https://www.instagram.com/p/CivBplpDPh0/', // Dynasty
         32: 'https://www.instagram.com/p/CcQWSvFjwAi/', // Spinal Tap
-        33: 'https://www.instagram.com/p/C9P5jNRA_nR/', // Frostbite
+        33: 'https://www.instagram.com/p/CK4K591D25e/', // Tribeless
         34: 'https://www.instagram.com/p/CJthsNfjhrc/', // Tiamat
         35: 'https://www.instagram.com/p/CLpG3uFjaj7/', // Divine Wind
         36: 'https://www.instagram.com/p/COdQeRDjIQ4/', // Samsara

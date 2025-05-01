@@ -108,10 +108,14 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
           );
         })}
         
-        {/* Display Price separately with USD format */}
+        {/* Display Price correctly - as-is for text or with $ for numbers */}
         {item?.price && (
           <span className="block mb-2">
-            <strong>Price</strong>: ${parseInt(item.price).toLocaleString()}
+            <strong>Price</strong>: {
+              isNaN(parseInt(item.price)) 
+                ? item.price 
+                : `$${parseInt(item.price).toLocaleString()}`
+            }
           </span>
         )}
       </p>

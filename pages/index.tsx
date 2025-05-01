@@ -227,6 +227,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Knife\nElement: Fire\nAlignment: Neutral Good',
     image: '/images/Tribeless.png',
     elements: ['Fire'],
+    price: 'Set by Gabriel'
   },
 ];
 
@@ -245,7 +246,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Deity\nElement: Divine, Wind\nAlignment: True Neutral.',
     image: '/images/DivineWind.png',
     elements: ['Divine'],
-    price: '525'
+    price: 'Set by Brendan & Shannon'
   },
   {
     id: 36,
