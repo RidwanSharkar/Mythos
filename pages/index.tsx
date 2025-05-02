@@ -238,7 +238,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Ancient Wyrm\nElement: Draconic, Fire, Magma\nAlignment: Lawful Evil',
     image: '/images/Tiamat.png',
     elements: ['Draconic'],
-    price: '875'
+    price: 'Set by Fahmid Sharkar'
   },
   {
     id: 35,
