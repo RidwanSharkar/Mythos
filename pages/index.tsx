@@ -94,7 +94,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Draconic\nAlignment: Chaotic Good',
     image: '/images/Emerald.png',
     elements: ['Draconic'],
-    price: '245'
+    price: 'Set by Nicholas'
   },
   {
     id: 10,
@@ -120,7 +120,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     images: [
     ],
     elements: ['Radiant'],
-    price: '190'
+    price: 'Set by Darren & Shreya'
   },
   {
     id: 47,
