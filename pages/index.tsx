@@ -128,7 +128,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Shield + Oathblade\nElement: Radiant\nAlignment: Lawful Good',
     image: '/images/Divine.png',
     elements: ['Radiant'],
-    price: '165'
+    price: 'Set by Danny R.'
   },
   {
     id: 48,
@@ -318,7 +318,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Pendant, Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
     image: '/images/Zelda.png',
     elements: ['Nature'],
-    price: '195'
+    price: 'Set by Taylor'
   },
   {
     id: 45,
