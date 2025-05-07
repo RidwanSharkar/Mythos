@@ -302,7 +302,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Pendant\nElement: Nature\nAlignment: True Neutral',
     image: '/images/Tiger.png',
     elements: ['Nature'],
-    price: '165'
+    price: 'Set by Joanna'
   },
   {
     id: 43,
