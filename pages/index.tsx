@@ -38,7 +38,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Demigod, Staff\nElements: Divine, Nature\nAlignment: True Neutral',
     image: '/images/Fenrir.png',
     elements: ['Nature'],
-    price: '435'
+    price: '445'
   },
   {
     id: 3,
@@ -62,7 +62,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Bow, Demigod\nElement: Nature\nAlignment: Neutral Good',
     image: '/images/Eden.png',
     elements: ['Nature'],
-    price: '445'
+    price: '425'
   },
   {
     id: 6,
@@ -70,20 +70,20 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
     elements: ['Void'],
-    price: '450'
+    price: '395'
   },
   {
     id: 7,
-    title: '𝐿𝓊𝓈𝓉',
-    description: 'Class: Spellblade\nElements: Fire\nAlignment: Chaotic Neutral',
-    image: '/images/Duo2.png',
-    elements: ['Fire'],
-    price: '155'
+    title: '𝒢𝓁𝓊𝓉𝓉𝑜𝓃𝓎',
+    description: 'Class: Runeblade\nElements: Draconic\nAlignment: Chaotic Evil',
+    image: '/images/Dragonbone.png',
+    elements: ['Draconic'],
+    price: 'Set by Byron'
   },
   {
     id: 8,
     title: '𝐹𝓇𝑜𝓈𝓉𝒷𝒾𝓉𝑒',
-    description: 'Class: Runeblade\nElement: Necro + Frost\nAlignment: Chaotic Evil + Chaotic Neutral',
+    description: 'Class: Runeblade\nElement: Frost\nAlignment: Chaotic Neutral',
     image: '/images/Frostbite.png',
     elements: ['Frost'],
     price: '255'
@@ -99,9 +99,9 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 10,
     title: '𝐸𝓃𝓋𝓎',
-    description: 'Class: Runeblade\nElement: Necro + Frost\nAlignment: Chaotic Evil + Chaotic Neutral',
+    description: 'Class: Runeblade\nElement: Necro\nAlignment: Chaotic Evil',
     image: '/images/Envy.png',
-    elements: ['Frost'],
+    elements: ['Necro'],
     price: '345'
   },
   {
@@ -136,7 +136,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
     image: '/images/WhiteLightning.png', 
     elements: ['Lightning'],
-    price: '175'
+    price: '135'
   },
   {
     id: 49,
@@ -160,7 +160,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Spectre.png',
     elements: ['Arcane'],
-    price: '135'
+    price: '115'
   },
   {
     id: 52,
@@ -176,7 +176,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: War Hammer, Maul\nElement: Lightning, Thunder\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
     elements: ['Lightning'],
-    price: '295'
+    price: '285'
   },
 ];
 
@@ -184,18 +184,18 @@ const GALLERY_ITEMS: GalleryItem[] = [
 const INNER_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 28,
-    title: '𝐸𝓇𝑒𝒷𝓊𝓈',
-    description: 'Class: Cleaver\nElement: Void\nAlignment: True Neutral',
-    image: '/images/Erebus.png',
-    elements: ['Void'],
-    price: '1250'
+    title: '𝐸𝓂𝓅𝓎𝓇𝑒𝒶𝓃',
+    description: 'Class: Spellblade\nElement: Arcane\nAlignment: Lawful Neutral',
+    image: '/images/Empyrean.png',
+    elements: ['Martial'],
+    price: 'Set by Byron'
   },
   {
     id: 29,
     title: 'Full Set',
     description: 'Tier 1 + Tier 2 Set',
     image: '/images/lot.png',
-    price: '595'
+    price: '440'
   },
   {
     id: 30,

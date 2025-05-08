@@ -29,7 +29,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
         4: 'https://www.instagram.com/p/CLXGKGUDzdM/',  // Bloodmoon
         5: 'https://www.instagram.com/p/CIZ9lYvj7lz/',  // Eden
         6: 'https://www.instagram.com/p/CVS_1MHDFQv/',  // Wrath
-        7: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Lust
+        7: 'https://www.instagram.com/p/Bgo8IiMgl02/',  // Gluttony
         8: 'https://www.instagram.com/p/CONzKIXDkug/', // Frostbite
         9: 'https://www.instagram.com/p/CJeOkvDDolJ/', // Emerald Fang
         11: 'https://www.instagram.com/p/CIQrI-yjcX-/', // Pride
@@ -42,7 +42,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
         51: 'https://www.instagram.com/p/CINEqAgjY9C/', // Spectre
         52: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Reavers
         53: 'https://www.instagram.com/p/Bj-8quahGCx/', // Maelstrom
-        28: 'https://www.instagram.com/p/C9P5jNRA_nR/', // Erebus
+        28: 'https://www.instagram.com/p/CI3clqYjG8c/', // Empyrean
         29: 'https://www.instagram.com/p/BTjhBnlFwfU/', // Set
         30: 'https://www.instagram.com/p/CqLYWcAjIr7/', // Grove Warden
         31: 'https://www.instagram.com/p/CivBplpDPh0/', // Dynasty
@@ -68,8 +68,8 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
     }
   }, [selectedItem]);
   
-  // If no URL is available, don't render the panel
-  if (!instagramUrl) return null;
+  // Don't render anything on mobile or if no URL is available
+  if (isMobile || !instagramUrl) return null;
 
   const PanelContent = () => (
     <div className="h-full flex flex-col">
@@ -78,19 +78,13 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
           url={instagramUrl}
           width={380}
           captioned={false}
-          key={instagramUrl} // Force re-render when URL changes
+          key={instagramUrl}
         />
       </div>
     </div>
   );
 
-  return isMobile ? (
-    <div className="mobile-instagram-panel">
-      <div className="mobile-body-container">
-        <PanelContent />
-      </div>
-    </div>
-  ) : (
+  return (
     <div
       className="fixed top-0 bottom-0 w-[400px] bg-background/80 backdrop-blur-sm shadow-lg p-5"
       style={{ left: '0px' }}
