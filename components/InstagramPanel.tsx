@@ -76,7 +76,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
       <div className="instagram-embed-container">
         <InstagramEmbed 
           url={instagramUrl}
-          width={420}
+          width={380}
           captioned={false}
           key={instagramUrl} // Force re-render when URL changes
         />
@@ -85,7 +85,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
   );
 
   return isMobile ? (
-    <div className="mobile-info-panel" style={{ left: 0, right: 'auto' }}>
+    <div className="mobile-instagram-panel">
       <div className="mobile-body-container">
         <PanelContent />
       </div>
