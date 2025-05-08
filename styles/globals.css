@@ -65,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.25);
+    transform: scale(0.2125);
     transform-origin: center center;
     z-index: 10;
   }

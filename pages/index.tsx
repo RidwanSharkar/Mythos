@@ -22,7 +22,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Destiny.png',
     elements: ['Arcane'],
-    price: '225'
+    price: '195'
   },
   {
     id: 1,
@@ -30,7 +30,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Imperial Martial\nAlignment: Lawful Evil',
     image: '/images/Kaiser.png',
     elements: ['Martial'],
-    price: '235'
+    price: '215'
   },
   {
     id: 2,
