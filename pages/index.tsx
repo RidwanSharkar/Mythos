@@ -278,7 +278,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Mechanical\nAlignment: Lawful Neutral',
     image: '/images/Automata.png',
     elements: ['Mechanical'],
-    price: '255'
+    price: 'Set by Brendan & Shannon'
   },
   {
     id: 40,
