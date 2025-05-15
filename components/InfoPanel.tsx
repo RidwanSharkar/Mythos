@@ -126,19 +126,19 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
                 
                 if (label === 'Class') {
                   rows[0].push(
-                    <span key={`${index}-class`} className="inline-block w-1/2 text-center">
+                    <span key={`${index}-class`} className="inline-block w-1/2 text-center truncate px-2">
                       <strong>{label}</strong>: {value}
                     </span>
                   );
                 } else if (label === 'Alignment') {
                   rows[0].push(
-                    <span key={`${index}-alignment`} className="inline-block w-1/2 text-center">
+                    <span key={`${index}-alignment`} className="inline-block w-1/2 text-center truncate px-2">
                       <strong>{label}</strong>: {value}
                     </span>
                   );
                 } else if (label === 'Element' || label === 'Elements') {
                   rows[1].push(
-                    <span key={`${index}-element`} className="inline-block w-1/2 text-center">
+                    <span key={`${index}-element`} className="inline-block w-1/2 text-center truncate px-2">
                       <strong>{label}</strong>: {value}
                     </span>
                   );
@@ -147,7 +147,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
 
               if (item?.price) {
                 rows[1].push(
-                  <span key="price" className="inline-block w-1/2 text-center">
+                  <span key="price" className="inline-block w-1/2 text-center truncate px-2">
                     <strong>Price</strong>: {
                       isNaN(parseInt(item.price)) 
                         ? item.price 
@@ -158,7 +158,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
               }
 
               return rows.map((row, rowIndex) => (
-                <div key={`row-${rowIndex}`} className="flex w-full mb-1 justify-center">
+                <div key={`row-${rowIndex}`} className="flex w-full mb-1 justify-center overflow-hidden">
                   {row}
                 </div>
               ));

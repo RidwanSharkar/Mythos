@@ -65,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.325);
+    transform: scale(0.3375 );
     transform-origin: center center;
     z-index: 10;
   }
@@ -112,7 +112,7 @@ body {
 
     /* Scale down the contents of the info panel */
     .mobile-info-panel > * {
-      transform: scale(0.6);
+      transform: scale(0.6125);
       transform-origin: top center;
       margin: 0 auto;
     }

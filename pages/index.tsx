@@ -43,7 +43,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 3,
     title: '𝒢𝓇𝑒𝑒𝒹',
-    description: 'Class: Greataxe\nElement: Duelist Martial, Mechanical\nAlignment: Neutral Evil',
+    description: 'Class: Greataxe\nElement: Mechanical\nAlignment: Neutral Evil',
     image: '/images/Greed2.png',
     elements: ['Mechanical'],
     price: '275'
@@ -51,7 +51,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 4,
     title: '𝐵𝓁𝑜𝑜𝒹𝓂𝑜𝑜𝓃',
-    description: 'Class: Greatsword\nElement: Psionic, Vampiric\nAlignment: Neutral Evil',
+    description: 'Class: Greatsword\nElement: Vampiric\nAlignment: Neutral Evil',
     image: '/images/Bloodmoon.png',
     elements: ['Psionic'],
     price: '180'
@@ -235,7 +235,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 34,
     title: '𝒯𝒾𝒶𝓂𝒶𝓉',
-    description: 'Class: Ancient Wyrm\nElement: Draconic, Fire, Magma\nAlignment: Lawful Evil',
+    description: 'Class: Ancient Wyrm\nElement: Draconic, Magma\nAlignment: Lawful Evil',
     image: '/images/Tiamat.png',
     elements: ['Draconic'],
     price: 'Set by Fahmid Sharkar'
@@ -315,7 +315,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 44,
     title: '𝐻𝓎𝓁𝒾𝒶𝓃 𝒮𝒽𝒾𝑒𝓁𝒹 + 𝑀𝒶𝓈𝓉𝑒𝓇 𝒮𝓌𝑜𝓇𝒹',
-    description: 'Class: Pendant, Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
+    description: 'Class: Sword &Board\nElement: Zelda\nAlignment: Lawful Good',
     image: '/images/Zelda.png',
     elements: ['Nature'],
     price: 'Set by Taylor'
