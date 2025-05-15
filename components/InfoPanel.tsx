@@ -127,19 +127,19 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
                 
                 if (label === 'Class') {
                   rows[0].push(
-                    <span key={`${index}-class`} className="grid-item text-sm">
+                    <span key={`${index}-class`} className="grid-item text-sm" title={`${label}: ${value}`}>
                       <strong className="mr-1">{label}:</strong>{value}
                     </span>
                   );
                 } else if (label === 'Alignment') {
                   rows[0].push(
-                    <span key={`${index}-alignment`} className="grid-item text-sm">
+                    <span key={`${index}-alignment`} className="grid-item text-sm" title={value}>
                       {value}
                     </span>
                   );
                 } else if (label === 'Element' || label === 'Elements') {
                   rows[1].push(
-                    <span key={`${index}-element`} className="grid-item text-sm">
+                    <span key={`${index}-element`} className="grid-item text-sm" title={`${label}: ${value}`}>
                       <strong className="mr-1">{label}:</strong>{value}
                     </span>
                   );
@@ -148,7 +148,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
 
               if (item?.price) {
                 rows[1].push(
-                  <span key="price" className="grid-item text-sm">
+                  <span key="price" className="grid-item text-sm" title={`Price: ${isNaN(parseInt(item.price)) ? item.price : `$${parseInt(item.price).toLocaleString()}`}`}>
                     <strong className="mr-1">Price:</strong>
                     {isNaN(parseInt(item.price)) 
                       ? item.price 
@@ -165,7 +165,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
               ));
             })()}
 
-            <h2 className="text-lg font-bold mt-1" style={{ paddingBottom: 'env(safe-area-inset-bottom, 4px)' }}>
+            <h2 className="text-lg font-bold mt-1" style={{ paddingBottom: 'env(safe-area-inset-bottom, 4px)' }} title={item?.title}>
               {item?.title}
             </h2>
           </div>
