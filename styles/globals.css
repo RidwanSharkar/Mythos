@@ -61,11 +61,11 @@ body {
     top: 0vh;
     left: 0;
     width: 100%;
-    height: 76vh;
+    height: 77vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.35);
+    transform: scale(0.335);
     transform-origin: center center;
     z-index: 10;
   }
@@ -79,7 +79,7 @@ body {
     height: 110vh !important;
     max-height: 110vh !important;
     overflow-y: auto !important;
-    padding: 0.25rem;
+    padding: 0rem;
     background: var(--background)/80 !important;
     backdrop-filter: blur(8px);
     right: 0 !important;
@@ -112,9 +112,26 @@ body {
 
     /* Scale down the contents of the info panel */
     .mobile-info-panel > * {
-      transform: scale(0.60);
+      transform: scale(0.615);
       transform-origin: top center;
       margin: 0 auto;
     }
+
+  div.flex.justify-between.items-center.mb-6 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Reduce spacing between text lines in info panel */
+  .mobile-info-panel p,
+  .mobile-info-panel div {
+    line-height: 1 !important;
+    margin: 0.25rem 0 !important;
+  }
+
+  /* Target specifically Class, Element, Alignment, Price lines */
+  .mobile-info-panel > div > div {
+    margin-bottom: 0.25rem !important;
+  }
 }
 
