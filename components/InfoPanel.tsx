@@ -1,6 +1,6 @@
 import { GalleryItem } from '@/types/gallery';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, JSX } from 'react';
 
 interface InfoPanelProps {
   item: GalleryItem | null;
@@ -17,6 +17,54 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  // Instagram URLs mapping
+  const instagramUrls: Record<number, string> = {
+    0: 'https://www.instagram.com/p/C7jlkgzg-b-/',  // Destiny
+    1: 'https://www.instagram.com/p/C2SfKibLZru/',  // Kaiser
+    2: 'https://www.instagram.com/p/CI7fszljdOB/',  // Fenrir
+    3: 'https://www.instagram.com/p/CHgATb4DCQg/',  // Greed
+    4: 'https://www.instagram.com/p/CLXGKGUDzdM/',  // Bloodmoon
+    5: 'https://www.instagram.com/p/CIZ9lYvj7lz/',  // Eden
+    6: 'https://www.instagram.com/p/CVS_1MHDFQv/',  // Wrath
+    7: 'https://www.instagram.com/p/Bgo8IiMgl02/',  // Gluttony
+    8: 'https://www.instagram.com/p/CONzKIXDkug/', // Frostbite
+    9: 'https://www.instagram.com/p/CJeOkvDDolJ/', // Emerald Fang
+    11: 'https://www.instagram.com/p/CIQrI-yjcX-/', // Pride
+    46: 'https://www.instagram.com/p/CMzr_wUj0tl/', // Solar Lance
+    10: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Envy
+    47: 'https://www.instagram.com/p/BdgLJ1sH41B/', // Oath
+    48: 'https://www.instagram.com/p/Bcf0WwgHbkr/', // White Lightning
+    49: 'https://www.instagram.com/p/BZ2ApRWnYjB/', // Scythe
+    50: 'https://www.instagram.com/p/BXWKhK2l2-T/', // Phoeenix
+    51: 'https://www.instagram.com/p/CINEqAgjY9C/', // Spectre
+    52: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Reavers
+    53: 'https://www.instagram.com/p/Bj-8quahGCx/', // Maelstrom
+    28: 'https://www.instagram.com/p/CI3clqYjG8c/', // Empyrean
+    29: 'https://www.instagram.com/p/BTjhBnlFwfU/', // Set
+    30: 'https://www.instagram.com/p/CqLYWcAjIr7/', // Grove Warden
+    31: 'https://www.instagram.com/p/CivBplpDPh0/', // Dynasty
+    32: 'https://www.instagram.com/p/CcQWSvFjwAi/', // Spinal Tap
+    33: 'https://www.instagram.com/p/CK4K591D25e/', // Tribeless
+    34: 'https://www.instagram.com/p/CJthsNfjhrc/', // Tiamat
+    35: 'https://www.instagram.com/p/CLpG3uFjaj7/', // Divine Wind
+    36: 'https://www.instagram.com/p/COdQeRDjIQ4/', // Samsara
+    37: 'https://www.instagram.com/p/CPg5QkKDbha/', // Dracolich
+    38: 'https://www.instagram.com/p/C8cQwlWAwXh/', // Monarch
+    39: 'https://www.instagram.com/p/CqIrxGgtEws/', // Automata
+    40: 'https://www.instagram.com/p/C7hJFlsA07a/', // Abaddon 
+    41: 'https://www.instagram.com/p/CqVo8xBOG5U/', // Aegis
+    42: 'https://www.instagram.com/p/CPqgrewji9p/', // Tiger
+    43: 'https://www.instagram.com/p/CKHRQpYjISF/', // Zephyr
+    44: 'https://www.instagram.com/p/C7zKOm8AlgX/', // Hylian Shield + Master Sword
+    45: 'https://www.instagram.com/p/BnrPliZlMZj/', // Abyssal Boneplate
+  };
+
+  const handleImageClick = () => {
+    if (isMobile && item && instagramUrls[item.id]) {
+      window.open(instagramUrls[item.id], '_blank');
+    }
+  };
 
   const handleNextImage = () => {
     if (item?.images) {
@@ -47,7 +95,11 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
       </div>
       
       <div className="relative w-full h-[360px] mb-4">
-        <div className="relative w-full h-full">
+        <div 
+          className="relative w-full h-full"
+          onClick={handleImageClick}
+          style={{ cursor: isMobile ? 'pointer' : 'default' }}
+        >
           <Image
             src={item?.images?.[currentImageIndex] || item?.image || ''}
             alt={item?.title || ''}
@@ -86,24 +138,78 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
       )}
       
       <p className="mb-4 flex-grow whitespace-pre-line">
-        {item?.description.split('\n').map((line, index) => {
-          const [label, value] = line.split(': ');
-          return (
-            <span key={index} className="block mb-2">
-              <strong>{label}</strong>: {value}
-            </span>
-          );
-        })}
-        
-        {/* Display Price correctly - as-is for text or with $ for numbers */}
-        {item?.price && (
-          <span className="block mb-2">
-            <strong>Price</strong>: {
-              isNaN(parseInt(item.price)) 
-                ? item.price 
-                : `$${parseInt(item.price).toLocaleString()}`
+        {isMobile ? (
+          // Mobile Layout: 2x2 grid
+          (() => {
+            const rows: JSX.Element[][] = [[], []];
+            
+            // Parse description and organize into rows
+            item?.description.split('\n').forEach((line, index) => {
+              const [label, value] = line.split(': ');
+              
+              if (label === 'Class') {
+                rows[0].push(
+                  <span key={`${index}-class`} className="inline-block w-1/2">
+                    <strong>{label}</strong>: {value}
+                  </span>
+                );
+              } else if (label === 'Alignment') {
+                rows[0].push(
+                  <span key={`${index}-alignment`} className="inline-block w-1/2">
+                    <strong>{label}</strong>: {value}
+                  </span>
+                );
+              } else if (label === 'Element' || label === 'Elements') {
+                rows[1].push(
+                  <span key={`${index}-element`} className="inline-block w-1/2">
+                    <strong>{label}</strong>: {value}
+                  </span>
+                );
+              }
+            });
+
+            // Add price to second row
+            if (item?.price) {
+              rows[1].push(
+                <span key="price" className="inline-block w-1/2">
+                  <strong>Price</strong>: {
+                    isNaN(parseInt(item.price)) 
+                      ? item.price 
+                      : `$${parseInt(item.price).toLocaleString()}`
+                  }
+                </span>
+              );
             }
-          </span>
+
+            // Render rows
+            return rows.map((row, rowIndex) => (
+              <div key={`row-${rowIndex}`} className="flex w-full mb-2">
+                {row}
+              </div>
+            ));
+          })()
+        ) : (
+          // Desktop Layout: 4 rows
+          <>
+            {item?.description.split('\n').map((line, index) => {
+              const [label, value] = line.split(': ');
+              return (
+                <span key={index} className="block mb-2">
+                  <strong>{label}</strong>: {value}
+                </span>
+              );
+            })}
+            
+            {item?.price && (
+              <span className="block mb-2">
+                <strong>Price</strong>: {
+                  isNaN(parseInt(item.price)) 
+                    ? item.price 
+                    : `$${parseInt(item.price).toLocaleString()}`
+                }
+              </span>
+            )}
+          </>
         )}
       </p>
     </div>
