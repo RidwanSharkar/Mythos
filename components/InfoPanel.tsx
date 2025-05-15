@@ -90,11 +90,12 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
           <button 
             onClick={onClose}
             className="p-2 hover:bg-foreground/10 rounded-full absolute top-2 right-2 z-10"
+            style={{ top: 'env(safe-area-inset-top, 8px)' }}
           >
             ✕
           </button>
 
-          <div className="relative w-full h-[360px]">
+          <div className="image-container">
             <div 
               className="relative w-full h-full"
               onClick={handleImageClick}
@@ -104,7 +105,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
                 src={item?.images?.[currentImageIndex] || item?.image || ''}
                 alt={item?.title || ''}
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
               />
               
               {item?.images && item.images.length > 1 && (
@@ -116,7 +117,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
             </div>
           </div>
 
-          <p className="mb-0 flex-grow whitespace-pre-line text-center">
+          <div className="text-container">
             {/* Mobile Layout: 2x2 grid */}
             {(() => {
               const rows: JSX.Element[][] = [[], []];
@@ -126,20 +127,20 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
                 
                 if (label === 'Class') {
                   rows[0].push(
-                    <span key={`${index}-class`} className="inline-block w-1/2 text-center truncate px-2">
-                      <strong>{label}</strong>: {value}
+                    <span key={`${index}-class`} className="grid-item text-sm">
+                      <strong className="mr-1">{label}:</strong>{value}
                     </span>
                   );
                 } else if (label === 'Alignment') {
                   rows[0].push(
-                    <span key={`${index}-alignment`} className="inline-block w-1/2 text-center truncate px-2">
-                      <strong>{label}</strong>: {value}
+                    <span key={`${index}-alignment`} className="grid-item text-sm">
+                      {value}
                     </span>
                   );
                 } else if (label === 'Element' || label === 'Elements') {
                   rows[1].push(
-                    <span key={`${index}-element`} className="inline-block w-1/2 text-center truncate px-2">
-                      <strong>{label}</strong>: {value}
+                    <span key={`${index}-element`} className="grid-item text-sm">
+                      <strong className="mr-1">{label}:</strong>{value}
                     </span>
                   );
                 }
@@ -147,25 +148,27 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
 
               if (item?.price) {
                 rows[1].push(
-                  <span key="price" className="inline-block w-1/2 text-center truncate px-2">
-                    <strong>Price</strong>: {
-                      isNaN(parseInt(item.price)) 
-                        ? item.price 
-                        : `$${parseInt(item.price).toLocaleString()}`
+                  <span key="price" className="grid-item text-sm">
+                    <strong className="mr-1">Price:</strong>
+                    {isNaN(parseInt(item.price)) 
+                      ? item.price 
+                      : `$${parseInt(item.price).toLocaleString()}`
                     }
                   </span>
                 );
               }
 
               return rows.map((row, rowIndex) => (
-                <div key={`row-${rowIndex}`} className="flex w-full mb-1 justify-center overflow-hidden">
+                <div key={`row-${rowIndex}`} className="grid-row">
                   {row}
                 </div>
               ));
             })()}
-          </p>
 
-          <h2 className="text-xl font-bold text-center w-full mt-0">{item?.title}</h2>
+            <h2 className="text-lg font-bold mt-1" style={{ paddingBottom: 'env(safe-area-inset-bottom, 4px)' }}>
+              {item?.title}
+            </h2>
+          </div>
         </>
       ) : (
         // Desktop Layout - Title at top

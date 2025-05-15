@@ -27,7 +27,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 1,
     title: '𝒦𝒶𝒾𝓈𝑒𝓇',
-    description: 'Class: Greatsword\nElement: Imperial Martial\nAlignment: Lawful Evil',
+    description: 'Class: Greatsword\nElement: Martial\nAlignment: Lawful Evil',
     image: '/images/Kaiser.png',
     elements: ['Martial'],
     price: '215'
@@ -46,7 +46,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greataxe\nElement: Mechanical\nAlignment: Neutral Evil',
     image: '/images/Greed2.png',
     elements: ['Mechanical'],
-    price: '275'
+    price: '255'
   },
   {
     id: 4,
@@ -102,15 +102,15 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Necro\nAlignment: Chaotic Evil',
     image: '/images/Envy.png',
     elements: ['Necro'],
-    price: '295'
+    price: '285'
   },
   {
     id: 11,
     title: '𝒫𝓇𝒾𝒹𝑒',
-    description: 'Class: Trident-Spear\nElement: Duelist Martial\nAlignment: Chaotic Neutral',
+    description: 'Class: Trident-Spear\nElement: Martial\nAlignment: Chaotic Neutral',
     image: '/images/Pride.png',
     elements: ['Martial'],
-    price: '325'
+    price: '295'
   },
   {
     id: 46,
@@ -165,7 +165,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 52,
     title: '𝐸𝓋𝑒𝓃𝓉 𝐻𝑜𝓇𝒾𝓏𝑜𝓃 + 𝒯𝑒𝓂𝓅𝑜𝓇𝒶𝓁 𝑅𝑒𝒶𝓋𝑒𝓇',
-    description: 'Class: Twin-Blades\nElements: Void + Psionic\nAlignment: Chaotic Good/Evil',
+    description: 'Class: Twin-Blades\nElements: Void/Psionic\nAlignment: Chaotic Good/Evil',
     image: '/images/Reavers.png',
     elements: ['Psionic'],
     price: '275'
@@ -173,10 +173,10 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 53,
     title: '𝑀𝒶𝑒𝓁𝓈𝓉𝓇𝑜𝓂',
-    description: 'Class: War Hammer\nElement: Lightning, Thunder\nAlignment: Chaotic Neutral',
+    description: 'Class: War Hammer\nElement: Lightning\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
     elements: ['Lightning'],
-    price: '265'
+    price: '235'
   },
 ];
 
@@ -208,7 +208,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 31,
     title: '𝒟𝓎𝓃𝒶𝓈𝓉𝓎',
-    description: 'Class: Katana\nElement: Imperial Martial\nAlignment: Lawful Neutral',
+    description: 'Class: Katana\nElement: Martial\nAlignment: Lawful Neutral',
     image: '/images/Dynasty.png',
     elements: ['Martial'],
     price: 'Set by Leo'
@@ -219,7 +219,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Blade\nElement: Necro, Frost\nAlignment: Chaotic Evil',
     image: '/images/SpinalTap2.png',
     elements: ['Frost'],
-    price: '495'
+    price: '575'
   },
   {
     id: 33,
@@ -235,7 +235,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 34,
     title: '𝒯𝒾𝒶𝓂𝒶𝓉',
-    description: 'Class: Ancient Wyrm\nElement: Draconic, Magma\nAlignment: Lawful Evil',
+    description: 'Class: Ancient Wyrm\nElement: Draconic\nAlignment: Lawful Evil',
     image: '/images/Tiamat.png',
     elements: ['Draconic'],
     price: 'Set by Fahmid Sharkar'
@@ -315,7 +315,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 44,
     title: '𝐻𝓎𝓁𝒾𝒶𝓃 𝒮𝒽𝒾𝑒𝓁𝒹 + 𝑀𝒶𝓈𝓉𝑒𝓇 𝒮𝓌𝑜𝓇𝒹',
-    description: 'Class: Sword &Board\nElement: Zelda\nAlignment: Lawful Good',
+    description: 'Class: Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
     image: '/images/Zelda.png',
     elements: ['Nature'],
     price: 'Set by Taylor'

@@ -53,98 +53,111 @@ body {
     min-height: 100vh;
     overflow-y: auto;
     position: relative;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-top: env(safe-area-inset-top);
   }
 
-  /* Mobile-specific container for GalleryWheel */
   .mobile-gallery-container {
     position: fixed;
-    top: 0vh;
+    top: calc(env(safe-area-inset-top) + 19.25vh);
     left: 0;
     width: 100%;
-    height: 81vh;
+    height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.35 );
+    transform: scale(0.36);
     transform-origin: center center;
     z-index: 10;
   }
 
-  /* Mobile-specific InfoPanel styles */
   .mobile-info-panel {
     position: fixed !important;
-    top: 49vh !important;
+    top: 45vh !important;
     left: 0 !important;
     width: 100% !important;
-    height: 110vh !important;
-    max-height: 110vh !important;
+    height: calc(55vh - env(safe-area-inset-bottom)) !important;
+    max-height: calc(55vh - env(safe-area-inset-bottom)) !important;
     overflow-y: auto !important;
-    padding: 0rem;
-    background: var(--background)/80 !important;
+    padding: 0.75rem;
+    padding-top: 0.5rem;
+    background: var(--background)/90 !important;
     backdrop-filter: blur(8px);
     right: 0 !important;
     z-index: 20;
-    -webkit-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
   }
 
-
-  /* Add scrollable container for mobile */
   .mobile-scroll-container {
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 0vh;
+    padding-bottom: env(safe-area-inset-bottom);
     position: relative;
   }
 
-  /* Add a container for the mobile body */
   .mobile-body-container {
-    min-height: 100vh;
-    padding-bottom: 0vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
 
+  .mobile-info-panel .image-container {
+    width: 75%;
+    aspect-ratio: 1;
+    position: relative;
+    margin: 0 auto 0.5rem auto;
+  }
 
-  div.relative img {
+  .mobile-info-panel .image-container img {
+    object-fit: contain;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    border-radius: 8px;
   }
 
-    /* Scale down the contents of the info panel */
-    .mobile-info-panel > * {
-      transform: scale(0.635);
-      transform-origin: top center;
-      margin: 0 auto;
-    }
-
-  div.flex.justify-between.items-center.mb-6 {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  .mobile-info-panel .text-container {
+    flex: 0 0 auto;
+    padding: 0.25rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: -0.25rem;
   }
 
-  /* Reduce spacing between text lines in info panel */
-  .mobile-info-panel p,
-  .mobile-info-panel div {
-    line-height: 1 !important;
-    margin: 0.125rem 0 !important;
+  .mobile-info-panel .grid-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
-  /* Target specifically Class, Element, Alignment, Price lines */
-  .mobile-info-panel > div > div {
-    margin-bottom: 0.25rem !important;
+  .mobile-info-panel .grid-item {
+    width: 50%;
+    text-align: center;
+    padding: 0rem;
   }
 
-  /* Make the info panel image clickable */
+  .mobile-info-panel h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 0.75;
+  }
+
   .mobile-info-panel .relative {
     cursor: pointer !important;
     transition: transform 0.2s ease-in-out;
   }
 
   .mobile-info-panel .relative:active {
-    transform: scale(0.95);
+    transform: scale(0.98);
   }
 
-  /* Add subtle indication that image is clickable */
   .mobile-info-panel .relative::after {
     content: '';
     position: absolute;
@@ -152,7 +165,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 50%;
+    border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
