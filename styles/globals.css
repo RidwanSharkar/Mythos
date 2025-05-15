@@ -61,11 +61,11 @@ body {
     top: 0vh;
     left: 0;
     width: 100%;
-    height: 75vh;
+    height: 76vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.375);
+    transform: scale(0.35);
     transform-origin: center center;
     z-index: 10;
   }
@@ -112,7 +112,7 @@ body {
 
     /* Scale down the contents of the info panel */
     .mobile-info-panel > * {
-      transform: scale(0.7);
+      transform: scale(0.65);
       transform-origin: top center;
       margin: 0 auto;
     }
