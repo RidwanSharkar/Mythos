@@ -62,11 +62,11 @@ body {
     top: calc(env(safe-area-inset-top) + 21vh);
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 51vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.35);
+    transform: scale(0.3375);
     transform-origin: center center;
     z-index: 10;
   }
