@@ -78,7 +78,7 @@ body {
     width: 100% !important;
     height: calc(55vh - env(safe-area-inset-bottom)) !important;
     max-height: calc(55vh - env(safe-area-inset-bottom)) !important;
-    overflow-y: auto !important;
+    overflow-y: auto !important; 
     padding: 0.75rem;
     padding-top: 0.5rem;
     background: var(--background)/90 !important;
@@ -106,7 +106,7 @@ body {
   }
 
   .mobile-info-panel .image-container {
-    width: 55%;
+    width: 75%;
     aspect-ratio: 1;
     position: relative;
     margin: 0 auto 0.5rem auto;
@@ -138,7 +138,7 @@ body {
   }
 
   .mobile-info-panel .grid-item {
-    width: 40%;
+    width: 37.5%;
     text-align: center;
     padding: 0rem;
     white-space: nowrap;
