@@ -125,7 +125,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 47,
     title: '𝒪𝒶𝓉𝒽𝒷𝓁𝒶𝒹𝑒',
-    description: 'Class: Shield + Oathblade\nElement: Radiant\nAlignment: Lawful Good',
+    description: 'Class: Amulet/Shield\nElement: Radiant\nAlignment: Lawful Good',
     image: '/images/Divine.png',
     elements: ['Radiant'],
     price: 'Set by Danny R.'
@@ -165,7 +165,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 52,
     title: '𝐸𝓋𝑒𝓃𝓉 𝐻𝑜𝓇𝒾𝓏𝑜𝓃 + 𝒯𝑒𝓂𝓅𝑜𝓇𝒶𝓁 𝑅𝑒𝒶𝓋𝑒𝓇',
-    description: 'Class: Twin-Blades\nElements: Void + Psionic\nAlignment: Chaotic Good + Chaotic Evil',
+    description: 'Class: Twin-Blades\nElements: Void + Psionic\nAlignment: Chaotic Good/Evil',
     image: '/images/Reavers.png',
     elements: ['Psionic'],
     price: '275'
@@ -173,7 +173,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 53,
     title: '𝑀𝒶𝑒𝓁𝓈𝓉𝓇𝑜𝓂',
-    description: 'Class: War Hammer, Maul\nElement: Lightning, Thunder\nAlignment: Chaotic Neutral',
+    description: 'Class: War Hammer\nElement: Lightning, Thunder\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
     elements: ['Lightning'],
     price: '265'
@@ -215,7 +215,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 32,
-    title: '𝒮𝓅𝒾𝓃𝒶𝓁 𝒯𝒶𝓇',
+    title: '𝒮𝓅𝒾𝓃𝒶𝓁 𝒯𝒶𝓅',
     description: 'Class: Blade\nElement: Necro, Frost\nAlignment: Chaotic Evil',
     image: '/images/SpinalTap2.png',
     elements: ['Frost'],
@@ -243,7 +243,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 35,
     title: '𝐸𝓈𝒸𝒽𝒶𝓉𝑜𝓃',
-    description: 'Class: Deity\nElement: Divine, Wind\nAlignment: True Neutral.',
+    description: 'Class: Deity\nElement: Divine, Wind\nAlignment: True Neutral',
     image: '/images/DivineWind.png',
     elements: ['Divine'],
     price: 'Set by Brendan & Shannon'

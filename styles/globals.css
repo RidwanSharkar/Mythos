@@ -61,11 +61,11 @@ body {
     top: 0vh;
     left: 0;
     width: 100%;
-    height: 78.5vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0.35);
+    transform: scale(0.325);
     transform-origin: center center;
     z-index: 10;
   }
@@ -84,7 +84,7 @@ body {
     backdrop-filter: blur(8px);
     right: 0 !important;
     z-index: 20;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; 
   }
 
 
@@ -126,7 +126,7 @@ body {
   .mobile-info-panel p,
   .mobile-info-panel div {
     line-height: 1 !important;
-    margin: 0.25rem 0 !important;
+    margin: 0.125rem 0 !important;
   }
 
   /* Target specifically Class, Element, Alignment, Price lines */
@@ -163,4 +163,3 @@ body {
     opacity: 1;
   }
 }
-

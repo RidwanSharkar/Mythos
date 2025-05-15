@@ -84,38 +84,143 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
 
   const PanelContent = () => (
     <div className="h-full flex flex-col">
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-bold">{item?.title}</h2>
-        <button 
-          onClick={onClose}
-          className="p-2 hover:bg-foreground/10 rounded-full"
-        >
-          ✕
-        </button>
-      </div>
-      
-      <div className="relative w-full h-[360px] mb-4">
-        <div 
-          className="relative w-full h-full"
-          onClick={handleImageClick}
-          style={{ cursor: isMobile ? 'pointer' : 'default' }}
-        >
-          <Image
-            src={item?.images?.[currentImageIndex] || item?.image || ''}
-            alt={item?.title || ''}
-            fill
-            className="object-cover rounded-lg"
-          />
-          
-          {item?.images && item.images.length > 1 && (
-            <>
-              <button onClick={handlePrevImage} className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">←</button>
-              <button onClick={handleNextImage} className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">→</button>
-            </>
-          )}
-        </div>
-      </div>
-      
+      {isMobile ? (
+        // Mobile Layout - Title at bottom
+        <>
+          <button 
+            onClick={onClose}
+            className="p-2 hover:bg-foreground/10 rounded-full absolute top-2 right-2 z-10"
+          >
+            ✕
+          </button>
+
+          <div className="relative w-full h-[360px]">
+            <div 
+              className="relative w-full h-full"
+              onClick={handleImageClick}
+              style={{ cursor: isMobile ? 'pointer' : 'default' }}
+            >
+              <Image
+                src={item?.images?.[currentImageIndex] || item?.image || ''}
+                alt={item?.title || ''}
+                fill
+                className="object-cover rounded-lg"
+              />
+              
+              {item?.images && item.images.length > 1 && (
+                <>
+                  <button onClick={handlePrevImage} className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">←</button>
+                  <button onClick={handleNextImage} className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">→</button>
+                </>
+              )}
+            </div>
+          </div>
+
+          <p className="mb-0 flex-grow whitespace-pre-line text-center">
+            {/* Mobile Layout: 2x2 grid */}
+            {(() => {
+              const rows: JSX.Element[][] = [[], []];
+              
+              item?.description.split('\n').forEach((line, index) => {
+                const [label, value] = line.split(': ');
+                
+                if (label === 'Class') {
+                  rows[0].push(
+                    <span key={`${index}-class`} className="inline-block w-1/2 text-center">
+                      <strong>{label}</strong>: {value}
+                    </span>
+                  );
+                } else if (label === 'Alignment') {
+                  rows[0].push(
+                    <span key={`${index}-alignment`} className="inline-block w-1/2 text-center">
+                      <strong>{label}</strong>: {value}
+                    </span>
+                  );
+                } else if (label === 'Element' || label === 'Elements') {
+                  rows[1].push(
+                    <span key={`${index}-element`} className="inline-block w-1/2 text-center">
+                      <strong>{label}</strong>: {value}
+                    </span>
+                  );
+                }
+              });
+
+              if (item?.price) {
+                rows[1].push(
+                  <span key="price" className="inline-block w-1/2 text-center">
+                    <strong>Price</strong>: {
+                      isNaN(parseInt(item.price)) 
+                        ? item.price 
+                        : `$${parseInt(item.price).toLocaleString()}`
+                    }
+                  </span>
+                );
+              }
+
+              return rows.map((row, rowIndex) => (
+                <div key={`row-${rowIndex}`} className="flex w-full mb-1 justify-center">
+                  {row}
+                </div>
+              ));
+            })()}
+          </p>
+
+          <h2 className="text-xl font-bold text-center w-full mt-0">{item?.title}</h2>
+        </>
+      ) : (
+        // Desktop Layout - Title at top
+        <>
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-xl font-bold">{item?.title}</h2>
+            <button 
+              onClick={onClose}
+              className="p-2 hover:bg-foreground/10 rounded-full"
+            >
+              ✕
+            </button>
+          </div>
+
+          <div className="relative w-full h-[360px] mb-4">
+            <div className="relative w-full h-full">
+              <Image
+                src={item?.images?.[currentImageIndex] || item?.image || ''}
+                alt={item?.title || ''}
+                fill
+                className="object-cover rounded-lg"
+              />
+              
+              {item?.images && item.images.length > 1 && (
+                <>
+                  <button onClick={handlePrevImage} className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">←</button>
+                  <button onClick={handleNextImage} className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/70">→</button>
+                </>
+              )}
+            </div>
+          </div>
+
+          <p className="mb-4 flex-grow whitespace-pre-line">
+            {item?.description.split('\n').map((line, index) => {
+              const [label, value] = line.split(': ');
+              return (
+                <span key={index} className="block mb-2">
+                  <strong>{label}</strong>: {value}
+                </span>
+              );
+            })}
+            
+            {item?.price && (
+              <span className="block mb-2">
+                <strong>Price</strong>: {
+                  isNaN(parseInt(item.price)) 
+                    ? item.price 
+                    : `$${parseInt(item.price).toLocaleString()}`
+                }
+              </span>
+            )}
+          </p>
+        </>
+      )}
+
       {item?.images && item.images.length > 1 && (
         <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
           {item.images.map((img, index) => (
@@ -136,82 +241,6 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
           ))}
         </div>
       )}
-      
-      <p className="mb-4 flex-grow whitespace-pre-line">
-        {isMobile ? (
-          // Mobile Layout: 2x2 grid
-          (() => {
-            const rows: JSX.Element[][] = [[], []];
-            
-            // Parse description and organize into rows
-            item?.description.split('\n').forEach((line, index) => {
-              const [label, value] = line.split(': ');
-              
-              if (label === 'Class') {
-                rows[0].push(
-                  <span key={`${index}-class`} className="inline-block w-1/2">
-                    <strong>{label}</strong>: {value}
-                  </span>
-                );
-              } else if (label === 'Alignment') {
-                rows[0].push(
-                  <span key={`${index}-alignment`} className="inline-block w-1/2">
-                    <strong>{label}</strong>: {value}
-                  </span>
-                );
-              } else if (label === 'Element' || label === 'Elements') {
-                rows[1].push(
-                  <span key={`${index}-element`} className="inline-block w-1/2">
-                    <strong>{label}</strong>: {value}
-                  </span>
-                );
-              }
-            });
-
-            // Add price to second row
-            if (item?.price) {
-              rows[1].push(
-                <span key="price" className="inline-block w-1/2">
-                  <strong>Price</strong>: {
-                    isNaN(parseInt(item.price)) 
-                      ? item.price 
-                      : `$${parseInt(item.price).toLocaleString()}`
-                  }
-                </span>
-              );
-            }
-
-            // Render rows
-            return rows.map((row, rowIndex) => (
-              <div key={`row-${rowIndex}`} className="flex w-full mb-2">
-                {row}
-              </div>
-            ));
-          })()
-        ) : (
-          // Desktop Layout: 4 rows
-          <>
-            {item?.description.split('\n').map((line, index) => {
-              const [label, value] = line.split(': ');
-              return (
-                <span key={index} className="block mb-2">
-                  <strong>{label}</strong>: {value}
-                </span>
-              );
-            })}
-            
-            {item?.price && (
-              <span className="block mb-2">
-                <strong>Price</strong>: {
-                  isNaN(parseInt(item.price)) 
-                    ? item.price 
-                    : `$${parseInt(item.price).toLocaleString()}`
-                }
-              </span>
-            )}
-          </>
-        )}
-      </p>
     </div>
   );
 
