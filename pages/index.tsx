@@ -203,7 +203,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Blade\nElement: Nature, Divine\nAlignment: Lawful Good',
     image: '/images/GroveWarden.png',
     elements: ['Nature'],
-    price: '995'
+    price: 'Set by Gabriel Donato'
   },
   {
     id: 31,
@@ -227,7 +227,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Knife\nElement: Fire\nAlignment: Neutral Good',
     image: '/images/Tribeless.png',
     elements: ['Fire'],
-    price: 'Set by Gabriel'
+    price: 'Set by Gabriel Donato'
   },
 ];
 
@@ -246,7 +246,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Deity\nElement: Divine, Wind\nAlignment: True Neutral',
     image: '/images/DivineWind.png',
     elements: ['Divine'],
-    price: 'Set by Brendan & Shannon'
+    price: 'Set by Shannon'
   },
   {
     id: 36,
@@ -278,7 +278,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Mechanical\nAlignment: Lawful Neutral',
     image: '/images/Automata.png',
     elements: ['Mechanical'],
-    price: 'Set by Brendan & Shannon'
+    price: 'Set by Brendan'
   },
   {
     id: 40,
