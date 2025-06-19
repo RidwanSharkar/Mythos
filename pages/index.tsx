@@ -22,7 +22,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Destiny.png',
     elements: ['Arcane'],
-    price: '195'
+    price: '145'
   },
   {
     id: 1,
@@ -30,7 +30,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Martial\nAlignment: Lawful Evil',
     image: '/images/Kaiser.png',
     elements: ['Martial'],
-    price: '215'
+    price: '150'
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Demigod, Staff\nElements: Divine, Nature\nAlignment: True Neutral',
     image: '/images/Fenrir.png',
     elements: ['Nature'],
-    price: '425'
+    price: '325'
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greataxe\nElement: Mechanical\nAlignment: Neutral Evil',
     image: '/images/Greed2.png',
     elements: ['Mechanical'],
-    price: '255'
+    price: '185'
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Vampiric\nAlignment: Neutral Evil',
     image: '/images/Bloodmoon.png',
     elements: ['Psionic'],
-    price: '180'
+    price: '125'
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Bow, Demigod\nElement: Nature\nAlignment: Neutral Good',
     image: '/images/Eden.png',
     elements: ['Nature'],
-    price: '375'
+    price: '275'
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
     elements: ['Void'],
-    price: '345'
+    price: '190'
   },
   {
     id: 7,
@@ -78,7 +78,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElements: Draconic\nAlignment: Chaotic Evil',
     image: '/images/Dragonbone.png',
     elements: ['Draconic'],
-    price: 'Set by Byron'
+    price: 'Set by Byron A.'
   },
   {
     id: 8,
@@ -86,7 +86,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Frost\nAlignment: Chaotic Neutral',
     image: '/images/Frostbite.png',
     elements: ['Frost'],
-    price: '195'
+    price: '125'
   },
   {
     id: 9,
@@ -94,7 +94,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Draconic\nAlignment: Chaotic Good',
     image: '/images/Emerald.png',
     elements: ['Draconic'],
-    price: 'Set by Nicholas'
+    price: 'Set by Nicholas M.'
   },
   {
     id: 10,
@@ -102,7 +102,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Necro\nAlignment: Chaotic Evil',
     image: '/images/Envy.png',
     elements: ['Necro'],
-    price: '285'
+    price: '185'
   },
   {
     id: 11,
@@ -110,7 +110,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Trident-Spear\nElement: Martial\nAlignment: Chaotic Neutral',
     image: '/images/Pride.png',
     elements: ['Martial'],
-    price: '295'
+    price: '205'
   },
   {
     id: 46,
@@ -136,7 +136,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
     image: '/images/WhiteLightning.png', 
     elements: ['Lightning'],
-    price: '135'
+    price: '95'
   },
   {
     id: 49,
@@ -144,7 +144,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Scythe\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Scythe2.png',
     elements: ['Necro'],
-    price: '185'
+    price: '120'
   },
   {
     id: 50,
@@ -152,7 +152,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Crossbow\nElement: Fire\nAlignment: Chaotic Good',
     image: '/images/Phoenix.png',
     elements: ['Fire'],
-    price: 'Set by Maudiel'
+    price: 'Set by Maudiel R.'
   },
   {
     id: 51,
@@ -160,7 +160,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Spectre.png',
     elements: ['Arcane'],
-    price: '115'
+    price: '105'
   },
   {
     id: 52,
@@ -168,7 +168,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Twin-Blades\nElements: Void/Psionic\nAlignment: Chaotic Good/Evil',
     image: '/images/Reavers.png',
     elements: ['Psionic'],
-    price: '275'
+    price: '215'
   },
   {
     id: 53,
@@ -176,7 +176,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: War Hammer\nElement: Lightning\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
     elements: ['Lightning'],
-    price: '235'
+    price: '180'
   },
 ];
 
@@ -188,14 +188,14 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Lawful Neutral',
     image: '/images/Empyrean.png',
     elements: ['Martial'],
-    price: 'Set by Byron'
+    price: 'Set by Byron A.'
   },
   {
     id: 29,
     title: 'Full Set',
     description: 'Tier 1 + Tier 2 Set',
     image: '/images/lot.png',
-    price: '420'
+    price: '350'
   },
   {
     id: 30,
@@ -203,7 +203,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Blade\nElement: Nature, Divine\nAlignment: Lawful Good',
     image: '/images/GroveWarden.png',
     elements: ['Nature'],
-    price: 'Set by Gabriel Donato'
+    price: 'Set by Gabriel D.'
   },
   {
     id: 31,
@@ -211,7 +211,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Katana\nElement: Martial\nAlignment: Lawful Neutral',
     image: '/images/Dynasty.png',
     elements: ['Martial'],
-    price: 'Set by Leo'
+    price: 'Set by Leo S.'
   },
   {
     id: 32,
@@ -219,7 +219,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Blade\nElement: Necro, Frost\nAlignment: Chaotic Evil',
     image: '/images/SpinalTap2.png',
     elements: ['Frost'],
-    price: '575'
+    price: 'TBD'
   },
   {
     id: 33,
@@ -227,7 +227,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Knife\nElement: Fire\nAlignment: Neutral Good',
     image: '/images/Tribeless.png',
     elements: ['Fire'],
-    price: 'Set by Gabriel Donato'
+    price: 'Set by Gabriel D.'
   },
 ];
 
@@ -246,7 +246,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Deity\nElement: Divine, Wind\nAlignment: True Neutral',
     image: '/images/DivineWind.png',
     elements: ['Divine'],
-    price: 'Set by Shannon'
+    price: 'Set by Brendan & Shannon'
   },
   {
     id: 36,
@@ -254,7 +254,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Deity\nElement: Divine, Nature\nAlignment: Neutral Good',  
     image: '/images/Samsara.png',
     elements: ['Nature'],
-    price: '325'
+    price: '225'
   },
   {
     id: 37,
@@ -262,7 +262,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Undead Wyrm\nElement: Draconic, Necro\nAlignment: Chaotic Evil',
     image: '/images/Dracolich2.png',
     elements: ['Draconic'],
-    price: '345'
+    price: '245'
   },
   {
     id: 38,
@@ -270,7 +270,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Nature\nAlignment: Lawful Good',
     image: '/images/Dreamweaver.png',
     elements: ['Nature'],
-    price: 'Set by Jarisha'
+    price: 'Set by Leo & Jarisha'
   },
   {
     id: 39,
@@ -278,7 +278,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Mechanical\nAlignment: Lawful Neutral',
     image: '/images/Automata.png',
     elements: ['Mechanical'],
-    price: 'Set by Brendan'
+    price: 'Set by Brendan & Shannon'
   },
   {
     id: 40,
@@ -286,7 +286,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Abaddon.png',
     elements: ['Necro'],
-    price: '375'
+    price: '265'
   },
   {
     id: 41,
@@ -294,7 +294,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Fire\nAlignment: Chaotic Good',
     image: '/images/Aegis.png',
     elements: ['Fire'],
-    price: '225'
+    price: '175'
   },
   {
     id: 42,
@@ -302,7 +302,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Pendant\nElement: Nature\nAlignment: True Neutral',
     image: '/images/Tiger.png',
     elements: ['Nature'],
-    price: 'Set by Joanna'
+    price: 'Set by Joanna L.'
   },
   {
     id: 43,
@@ -310,7 +310,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Wind\nAlignment: Neutral Good',
     image: '/images/Ash.png',
     elements: ['Wind'],
-    price: '135'
+    price: '120'
   },
   {
     id: 44,
@@ -318,7 +318,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
     image: '/images/Zelda.png',
     elements: ['Nature'],
-    price: 'Set by Taylor'
+    price: 'Set by Taylor L.'
   },
   {
     id: 45,
@@ -326,7 +326,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet/Shield\nElement: Necro\nAlignment: Neutral Evil',
     image: '/images/Abyssal.png',
     elements: ['Necro'],
-    price: '125'
+    price: '100'
   },
 ];
 
