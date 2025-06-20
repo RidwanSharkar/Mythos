@@ -310,7 +310,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Wind\nAlignment: Neutral Good',
     image: '/images/Ash.png',
     elements: ['Wind'],
-    price: '120'
+    price: 'Set by Jane "Yerm" Kim'  
   },
   {
     id: 44,
