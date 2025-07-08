@@ -21,7 +21,7 @@ interface ShadowLevel {
 export default function GalleryWheel({ layers, onSelectItem }: GalleryWheelProps) {
   const layerContainerRefs = useRef<(HTMLDivElement | null)[]>([]);
   const itemRefs = useRef<(HTMLDivElement | null)[][]>(layers.map(() => []));
-  const [layerRotations, setLayerRotations] = useState<number[]>(layers.map(() => 0));
+  const [layerRotations, setLayerRotations] = useState<number[]>(layers.map(() => 270));
   const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
   const [, setSelectedItemPosition] = useState<{ x: number; y: number } | null>(null);
   const [isMobile, setIsMobile] = useState(false);

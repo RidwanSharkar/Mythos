@@ -216,7 +216,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 32,
     title: '𝐸𝓇𝑒𝒷𝓊𝓈',
-    description: 'Class: Blade\nElement: Void, Frost\nAlignment: Chaotic Neutral',
+    description: 'Class: Blade\nElement: Void, Frost\nAlignment: True Neutral',
     image: '/images/Erebus.png',
     elements: ['Void'],
     price: '575'
