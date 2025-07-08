@@ -142,8 +142,8 @@ export default function GalleryWheel({ layers, onSelectItem }: GalleryWheelProps
                     handleItemClick(item, i, layerIndex);
                   }}
                   className={`absolute w-[120px] h-[120px] rounded-full cursor-pointer 
-                           border-2 border-[#FFD700] shadow-lg overflow-hidden 
-                           hover:scale-110 transition-transform bg-black/50
+                           ${isSelected ? 'border-[3px]' : 'border-2'} border-[#FFD700] shadow-lg overflow-hidden 
+                           hover:scale-110 transition-all bg-black/50
                            ${isSelected ? 'selected-item' : ''}`}
                   style={{
                     ...glowStyle,
@@ -156,6 +156,10 @@ export default function GalleryWheel({ layers, onSelectItem }: GalleryWheelProps
                     transformOrigin: '50% 50%',
                     pointerEvents: 'auto',
                     zIndex: layerIndex * 10,
+                    ...(isSelected && {
+                      borderColor: '#FFD700',
+                      boxShadow: '0 0 10px #FFD700'
+                    })
                   }}
                 >
                   <Image
