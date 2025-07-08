@@ -22,7 +22,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Destiny.png',
     elements: ['Arcane'],
-    price: '145'
+    price: '100'
   },
   {
     id: 1,
@@ -30,7 +30,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Martial\nAlignment: Lawful Evil',
     image: '/images/Kaiser.png',
     elements: ['Martial'],
-    price: '150'
+    price: '105'
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Demigod, Staff\nElements: Divine, Nature\nAlignment: True Neutral',
     image: '/images/Fenrir.png',
     elements: ['Nature'],
-    price: '325'
+    price: '225'
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greataxe\nElement: Mechanical\nAlignment: Neutral Evil',
     image: '/images/Greed2.png',
     elements: ['Mechanical'],
-    price: '185'
+    price: '145'
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Vampiric\nAlignment: Neutral Evil',
     image: '/images/Bloodmoon.png',
     elements: ['Psionic'],
-    price: '125'
+    price: '95'
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Bow, Demigod\nElement: Nature\nAlignment: Neutral Good',
     image: '/images/Eden.png',
     elements: ['Nature'],
-    price: '275'
+    price: '185'
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
     elements: ['Void'],
-    price: '190'
+    price: '165'
   },
   {
     id: 7,
@@ -86,7 +86,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Frost\nAlignment: Chaotic Neutral',
     image: '/images/Frostbite.png',
     elements: ['Frost'],
-    price: '125'
+    price: '95'
   },
   {
     id: 9,
@@ -94,7 +94,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Draconic\nAlignment: Chaotic Good',
     image: '/images/Emerald.png',
     elements: ['Draconic'],
-    price: 'Set by Nicholas M.'
+    price: 'Set by Nicholas Motahari'
   },
   {
     id: 10,
@@ -102,7 +102,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Necro\nAlignment: Chaotic Evil',
     image: '/images/Envy.png',
     elements: ['Necro'],
-    price: '185'
+    price: '145'
   },
   {
     id: 11,
@@ -110,7 +110,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Trident-Spear\nElement: Martial\nAlignment: Chaotic Neutral',
     image: '/images/Pride.png',
     elements: ['Martial'],
-    price: '205'
+    price: '145'
   },
   {
     id: 46,
@@ -128,7 +128,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet/Shield\nElement: Radiant\nAlignment: Lawful Good',
     image: '/images/Divine.png',
     elements: ['Radiant'],
-    price: 'Set by Danny R.'
+    price: 'Set by Danny Rodriguez'
   },
   {
     id: 48,
@@ -136,7 +136,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
     image: '/images/WhiteLightning.png', 
     elements: ['Lightning'],
-    price: '95'
+    price: '85'
   },
   {
     id: 49,
@@ -144,7 +144,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Scythe\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Scythe2.png',
     elements: ['Necro'],
-    price: '120'
+    price: '95'
   },
   {
     id: 50,
@@ -152,7 +152,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Crossbow\nElement: Fire\nAlignment: Chaotic Good',
     image: '/images/Phoenix.png',
     elements: ['Fire'],
-    price: 'Set by Maudiel R.'
+    price: 'Set by Maudiel Romero'
   },
   {
     id: 51,
@@ -160,7 +160,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Spectre.png',
     elements: ['Arcane'],
-    price: '105'
+    price: '85'
   },
   {
     id: 52,
@@ -168,15 +168,15 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Twin-Blades\nElements: Void/Psionic\nAlignment: Chaotic Good/Evil',
     image: '/images/Reavers.png',
     elements: ['Psionic'],
-    price: '215'
+    price: '140'
   },
-  {
+  { 
     id: 53,
     title: '𝑀𝒶𝑒𝓁𝓈𝓉𝓇𝑜𝓂',
     description: 'Class: War Hammer\nElement: Lightning\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
     elements: ['Lightning'],
-    price: '180'
+    price: '135'
   },
 ];
 
@@ -195,7 +195,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     title: 'Full Set',
     description: 'Tier 1 + Tier 2 Set',
     image: '/images/lot.png',
-    price: '350'
+    price: '120'
   },
   {
     id: 30,
@@ -203,7 +203,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Blade\nElement: Nature, Divine\nAlignment: Lawful Good',
     image: '/images/GroveWarden.png',
     elements: ['Nature'],
-    price: 'Set by Gabriel D.'
+    price: 'Set by Gabriel Donato'
   },
   {
     id: 31,
@@ -211,15 +211,15 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Katana\nElement: Martial\nAlignment: Lawful Neutral',
     image: '/images/Dynasty.png',
     elements: ['Martial'],
-    price: 'Set by Leo S.'
+    price: 'Set by Leo Scarano'
   },
   {
     id: 32,
-    title: '𝒮𝓅𝒾𝓃𝒶𝓁 𝒯𝒶𝓅',
-    description: 'Class: Blade\nElement: Necro, Frost\nAlignment: Chaotic Evil',
-    image: '/images/SpinalTap2.png',
-    elements: ['Frost'],
-    price: 'TBD'
+    title: '𝐸𝓇𝑒𝒷𝓊𝓈',
+    description: 'Class: Blade\nElement: Void, Frost\nAlignment: Chaotic Neutral',
+    image: '/images/Erebus.png',
+    elements: ['Void'],
+    price: '575'
   },
   {
     id: 33,
@@ -227,7 +227,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Knife\nElement: Fire\nAlignment: Neutral Good',
     image: '/images/Tribeless.png',
     elements: ['Fire'],
-    price: 'Set by Gabriel D.'
+    price: 'Set by Gabriel Donato'
   },
 ];
 
@@ -254,7 +254,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Deity\nElement: Divine, Nature\nAlignment: Neutral Good',  
     image: '/images/Samsara.png',
     elements: ['Nature'],
-    price: '225'
+    price: '125'
   },
   {
     id: 37,
@@ -262,7 +262,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Undead Wyrm\nElement: Draconic, Necro\nAlignment: Chaotic Evil',
     image: '/images/Dracolich2.png',
     elements: ['Draconic'],
-    price: '245'
+    price: '145'
   },
   {
     id: 38,
@@ -286,7 +286,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Abaddon.png',
     elements: ['Necro'],
-    price: '265'
+    price: '195'
   },
   {
     id: 41,
@@ -294,7 +294,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Fire\nAlignment: Chaotic Good',
     image: '/images/Aegis.png',
     elements: ['Fire'],
-    price: '175'
+    price: '125'
   },
   {
     id: 42,
@@ -302,7 +302,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Pendant\nElement: Nature\nAlignment: True Neutral',
     image: '/images/Tiger.png',
     elements: ['Nature'],
-    price: 'Set by Joanna L.'
+    price: 'Set by Joanna Leonardo'
   },
   {
     id: 43,
@@ -318,7 +318,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Sword & Board\nElement: Zelda\nAlignment: Lawful Good',
     image: '/images/Zelda.png',
     elements: ['Nature'],
-    price: 'Set by Taylor L.'
+    price: 'Set by Taylor Lamb'
   },
   {
     id: 45,
@@ -326,7 +326,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet/Shield\nElement: Necro\nAlignment: Neutral Evil',
     image: '/images/Abyssal.png',
     elements: ['Necro'],
-    price: '100'
+    price: '75'
   },
 ];
 
