@@ -20,7 +20,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
   // Update Instagram URL when selectedItem changes
   useEffect(() => {
     if (selectedItem) {
-      // Map item IDs directly to Instagram URLs
+      // Map item IDs directly to Instagram URLs -> y duplicate
       const instagramUrls: Record<number, string> = {
         0: 'https://www.instagram.com/p/C7jlkgzg-b-/',  // Destiny
         1: 'https://www.instagram.com/p/C2SfKibLZru/',  // Kaiser
@@ -46,7 +46,7 @@ export default function InstagramPanel({ selectedItem }: InstagramPanelProps) {
         29: 'https://www.instagram.com/p/BTjhBnlFwfU/', // Set
         30: 'https://www.instagram.com/p/CqLYWcAjIr7/', // Grove Warden
         31: 'https://www.instagram.com/p/CivBplpDPh0/', // Dynasty
-        32: 'https://www.instagram.com/p/CcQWSvFjwAi/', // Spinal Tap
+        32: 'https://www.instagram.com/p/C9P5jNRA_nR/', // Erebus
         33: 'https://www.instagram.com/p/CK4K591D25e/', // Tribeless
         34: 'https://www.instagram.com/p/CJthsNfjhrc/', // Tiamat
         35: 'https://www.instagram.com/p/CLpG3uFjaj7/', // Divine Wind

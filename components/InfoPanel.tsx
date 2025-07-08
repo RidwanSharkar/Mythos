@@ -18,7 +18,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Instagram URLs mapping
+  // Instagram URLs mapping -> seperate file dis shite later
   const instagramUrls: Record<number, string> = {
     0: 'https://www.instagram.com/p/C7jlkgzg-b-/',  // Destiny
     1: 'https://www.instagram.com/p/C2SfKibLZru/',  // Kaiser
