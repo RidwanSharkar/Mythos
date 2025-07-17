@@ -22,7 +22,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Destiny.png',
     elements: ['Arcane'],
-    price: '100'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 1,
@@ -30,7 +30,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Martial\nAlignment: Lawful Evil',
     image: '/images/Kaiser.png',
     elements: ['Martial'],
-    price: '105'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Vampiric\nAlignment: Neutral Evil',
     image: '/images/Bloodmoon.png',
     elements: ['Psionic'],
-    price: '95'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 5,
@@ -86,7 +86,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Frost\nAlignment: Chaotic Neutral',
     image: '/images/Frostbite.png',
     elements: ['Frost'],
-    price: '95'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 9,
@@ -136,7 +136,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
     image: '/images/WhiteLightning.png', 
     elements: ['Lightning'],
-    price: '85'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 49,
@@ -144,7 +144,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Scythe\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Scythe2.png',
     elements: ['Necro'],
-    price: '95'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 50,
@@ -160,7 +160,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Spectre.png',
     elements: ['Arcane'],
-    price: '85'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 52,
@@ -168,7 +168,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Twin-Blades\nElements: Void/Psionic\nAlignment: Chaotic Good/Evil',
     image: '/images/Reavers.png',
     elements: ['Psionic'],
-    price: '140'
+    price: 'Frozen in cryochamber'
   },
   { 
     id: 53,
@@ -195,7 +195,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     title: 'Full Set',
     description: 'Tier 1 + Tier 2 Set',
     image: '/images/lot.png',
-    price: '120'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 30,
@@ -219,7 +219,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Cleaver\nElement: Void, Frost\nAlignment: True Neutral',
     image: '/images/Erebus.png',
     elements: ['Void'],
-    price: '575'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 33,
@@ -286,7 +286,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Abaddon.png',
     elements: ['Necro'],
-    price: '195'
+    price: 'Frozen in cryochamber'
   },
   {
     id: 41,
@@ -326,7 +326,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet/Shield\nElement: Necro\nAlignment: Neutral Evil',
     image: '/images/Abyssal.png',
     elements: ['Necro'],
-    price: '75'
+    price: 'Frozen in cryochamber'
   },
 ];
 
