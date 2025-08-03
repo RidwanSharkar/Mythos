@@ -294,7 +294,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Fire\nAlignment: Chaotic Good',
     image: '/images/Aegis.png',
     elements: ['Fire'],
-    price: 'Confiscated by parental unit'
+    price: 'Set by The Morris Household'
   },
   {
     id: 42,
