@@ -195,7 +195,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     title: 'Full Set',
     description: 'Tier 1 + Tier 2 Set',
     image: '/images/lot.png',
-    price: 'Frozen in cryochamber'
+    price: 'Set by Aseem "Sven" Nerlekar'
   },
   {
     id: 30,
@@ -286,7 +286,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Abaddon.png',
     elements: ['Necro'],
-    price: 'Frozen in cryochamber'
+    price: 'Set by Aseem "Sven" Nerlekar'
   },
   {
     id: 41,
