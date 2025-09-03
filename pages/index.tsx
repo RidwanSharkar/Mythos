@@ -54,7 +54,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Vampiric\nAlignment: Neutral Evil',
     image: '/images/Bloodmoon.png',
     elements: ['Psionic'],
-    price: 'Frozen in cryochamber'
+    price: 'Set by Jarvin "Heinrich" Olanday'
   },
   {
     id: 5,
@@ -160,7 +160,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Spectre.png',
     elements: ['Arcane'],
-    price: 'Frozen in cryochamber'
+    price: 'Set by Jarvin "Heinrich" Olanday'
   },
   {
     id: 52,
@@ -326,7 +326,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet/Shield\nElement: Necro\nAlignment: Neutral Evil',
     image: '/images/Abyssal.png',
     elements: ['Necro'],
-    price: 'Frozen in cryochamber'
+    price: 'Set by Christopher Matter'
   },
 ];
 
