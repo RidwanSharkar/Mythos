@@ -211,7 +211,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Katana\nElement: Martial\nAlignment: Lawful Neutral',
     image: '/images/Dynasty.png',
     elements: ['Martial'],
-    price: 'Set by Leo Scarano'
+    price: 'Set by Leo "Thomyris" Scarano'
   },
   {
     id: 32,
@@ -270,7 +270,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Amulet\nElement: Nature\nAlignment: Lawful Good',
     image: '/images/Dreamweaver.png',
     elements: ['Nature'],
-    price: 'Set by Leo & Jarisha'
+    price: 'Set by Jarisha "Siora" Olanday'
   },
   {
     id: 39,
