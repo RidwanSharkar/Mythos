@@ -22,7 +22,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Spellblade\nElement: Arcane\nAlignment: Neutral Good',
     image: '/images/Destiny.png',
     elements: ['Arcane'],
-    price: 'Frozen in cryochamber'
+    price: 'Available'
   },
   {
     id: 1,
@@ -30,7 +30,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greatsword\nElement: Martial\nAlignment: Lawful Evil',
     image: '/images/Kaiser.png',
     elements: ['Martial'],
-    price: 'Frozen in cryochamber'
+    price: 'Available'
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Demigod, Staff\nElements: Divine, Nature\nAlignment: True Neutral',
     image: '/images/Fenrir.png',
     elements: ['Nature'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greataxe\nElement: Mechanical\nAlignment: Neutral Evil',
     image: '/images/Greed2.png',
     elements: ['Mechanical'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 4,
@@ -62,7 +62,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Bow, Demigod\nElement: Nature\nAlignment: Neutral Good',
     image: '/images/Eden.png',
     elements: ['Nature'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
     elements: ['Void'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 7,
@@ -86,7 +86,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Frost\nAlignment: Chaotic Neutral',
     image: '/images/Frostbite.png',
     elements: ['Frost'],
-    price: 'Frozen in cryochamber'
+    price: 'Available'
   },
   {
     id: 9,
@@ -102,7 +102,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Necro\nAlignment: Chaotic Evil',
     image: '/images/Envy.png',
     elements: ['Necro'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 11,
@@ -110,7 +110,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Trident-Spear\nElement: Martial\nAlignment: Chaotic Neutral',
     image: '/images/Pride.png',
     elements: ['Martial'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 46,
@@ -132,11 +132,11 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 48,
-    title: ' 𝒲𝒽𝒾𝓉𝑒 𝐿𝒾𝑔𝒽𝓉𝓃𝒾𝓃𝑔',
+    title: '𝒲𝒽𝒾𝓉𝑒 𝐿𝒾𝑔𝒽𝓉𝓃𝒾𝓃𝑔',
     description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
     image: '/images/WhiteLightning.png', 
     elements: ['Lightning'],
-    price: 'Frozen in cryochamber'
+    price: 'Available'
   },
   {
     id: 49,
@@ -144,7 +144,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Scythe\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Scythe2.png',
     elements: ['Necro'],
-    price: 'Frozen in cryochamber'
+    price: 'Available'
   },
   {
     id: 50,
@@ -168,7 +168,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Twin-Blades\nElements: Void/Psionic\nAlignment: Chaotic Good/Evil',
     image: '/images/Reavers.png',
     elements: ['Psionic'],
-    price: 'Frozen in cryochamber'
+    price: 'Available'
   },
   { 
     id: 53,
@@ -176,7 +176,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: War Hammer\nElement: Lightning\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
     elements: ['Lightning'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
 ];
 
@@ -219,7 +219,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Cleaver\nElement: Void, Frost\nAlignment: True Neutral',
     image: '/images/Erebus.png',
     elements: ['Void'],
-    price: 'Frozen in cryochamber'
+    price: 'Frozen'
   },
   {
     id: 33,
@@ -254,7 +254,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Deity\nElement: Divine, Nature\nAlignment: Neutral Good',  
     image: '/images/Samsara.png',
     elements: ['Nature'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 37,
@@ -262,7 +262,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Undead Wyrm\nElement: Draconic, Necro\nAlignment: Chaotic Evil',
     image: '/images/Dracolich2.png',
     elements: ['Draconic'],
-    price: 'Confiscated by parental unit'
+    price: 'Available'
   },
   {
     id: 38,
