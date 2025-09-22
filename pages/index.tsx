@@ -86,7 +86,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Frost\nAlignment: Chaotic Neutral',
     image: '/images/Frostbite.png',
     elements: ['Frost'],
-    price: 'Available'
+    price: 'Set by Christine Park'
   },
   {
     id: 9,
