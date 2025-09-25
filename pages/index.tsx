@@ -38,7 +38,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Demigod, Staff\nElements: Divine, Nature\nAlignment: True Neutral',
     image: '/images/Fenrir.png',
     elements: ['Nature'],
-    price: 'Available'
+    price: 'Set by Jun Park'
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Greataxe\nElement: Mechanical\nAlignment: Neutral Evil',
     image: '/images/Greed2.png',
     elements: ['Mechanical'],
-    price: 'Available'
+    price: 'Set by Jun Park'
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
     elements: ['Void'],
-    price: 'Available'
+    price: 'Set by Jun Park'
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Necro\nAlignment: Chaotic Evil',
     image: '/images/Envy.png',
     elements: ['Necro'],
-    price: 'Available'
+    price: 'Set by Jun Park'
   },
   {
     id: 11,
@@ -110,7 +110,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Trident-Spear\nElement: Martial\nAlignment: Chaotic Neutral',
     image: '/images/Pride.png',
     elements: ['Martial'],
-    price: 'Available'
+    price: 'Set by Jun Park'
   },
   {
     id: 46,
@@ -176,7 +176,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: War Hammer\nElement: Lightning\nAlignment: Chaotic Neutral',
     image: '/images/Maelstrom.png',
     elements: ['Lightning'],
-    price: 'Available'
+    price: 'Set by Jun Park'
   },
 ];
 
@@ -219,7 +219,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Cleaver\nElement: Void, Frost\nAlignment: True Neutral',
     image: '/images/Erebus.png',
     elements: ['Void'],
-    price: 'Frozen'
+    price: 'Reserved for Kevin Miranda'
   },
   {
     id: 33,
