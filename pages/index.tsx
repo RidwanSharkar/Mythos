@@ -62,7 +62,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Bow, Demigod\nElement: Nature\nAlignment: Neutral Good',
     image: '/images/Eden.png',
     elements: ['Nature'],
-    price: 'Available'
+    price: 'Set by HK Lee'
   },
   {
     id: 6,
@@ -254,7 +254,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Deity\nElement: Divine, Nature\nAlignment: Neutral Good',  
     image: '/images/Samsara.png',
     elements: ['Nature'],
-    price: 'Available'
+    price: 'Set by HK Lee'
   },
   {
     id: 37,
