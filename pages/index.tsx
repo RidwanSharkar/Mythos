@@ -136,7 +136,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
     image: '/images/WhiteLightning.png', 
     elements: ['Lightning'],
-    price: 'Available'
+    price: 'Set by "Deepsea" Besfort Ymaj'
   },
   {
     id: 49,
@@ -144,7 +144,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Scythe\nElement: Necro\nAlignment: Lawful Evil',
     image: '/images/Scythe2.png',
     elements: ['Necro'],
-    price: 'Available'
+    price: 'Set by "Deepsea" Besfort Ymaj'
   },
   {
     id: 50,
