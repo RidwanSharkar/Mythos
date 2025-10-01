@@ -262,7 +262,7 @@ const MIDDLE_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Undead Wyrm\nElement: Draconic, Necro\nAlignment: Chaotic Evil',
     image: '/images/Dracolich2.png',
     elements: ['Draconic'],
-    price: 'Available'
+    price: 'Set by Prannoy Mohan'
   },
   {
     id: 38,
