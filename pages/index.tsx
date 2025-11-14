@@ -38,7 +38,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Demigod, Staff\nElements: Divine, Nature\nAlignment: True Neutral',
     image: '/images/Fenrir.png',
     elements: ['Nature'],
-    price: 'Set by Jun Park'
+    price: 'Set by Terez Marsh'
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
     elements: ['Void'],
-    price: 'Set by Jun Park'
+    price: 'Set by Ant Yucesoy'
   },
   {
     id: 7,
@@ -136,7 +136,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Axe\nElement: Lightning\nAlignment: Lawful Good',
     image: '/images/WhiteLightning.png', 
     elements: ['Lightning'],
-    price: 'Set by "Deepsea" Besfort Ymaj'
+    price: 'Set by Terez Marsh'
   },
   {
     id: 49,
