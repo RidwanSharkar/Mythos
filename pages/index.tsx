@@ -70,7 +70,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Runeblade\nElement: Void, Frost\nAlignment: Chaotic Evil',
     image: '/images/Wrath.png',
     elements: ['Void'],
-    price: 'Set by Ant Yucesoy'
+    price: 'Set by Ant Yücesoy'
   },
   {
     id: 7,
