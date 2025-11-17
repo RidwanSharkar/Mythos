@@ -192,10 +192,11 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 29,
-    title: 'Full Set',
-    description: 'Tier 1 + Tier 2 Set',
-    image: '/images/lot.png',
-    price: 'Set by Aseem "Sven" Nerlekar'
+    title: 'Spinal Tap III',
+    description: 'Class: Scytheblade\nElement: Necro\nAlignment: Neutral Evil',
+    image: '/images/SpinalTap3.png',
+    elements: ['Necro'],
+    price: 'Set by Leo Scarano'
   },
   {
     id: 30,

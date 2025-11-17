@@ -41,7 +41,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
     52: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Reavers
     53: 'https://www.instagram.com/p/Bj-8quahGCx/', // Maelstrom
     28: 'https://www.instagram.com/p/CI3clqYjG8c/', // Empyrean
-    29: 'https://www.instagram.com/p/BTjhBnlFwfU/', // Set
+    29: 'https://www.instagram.com/p/DQ7Rk8Mkpup/', // Spinal Tap III
     30: 'https://www.instagram.com/p/CqLYWcAjIr7/', // Grove Warden
     31: 'https://www.instagram.com/p/CivBplpDPh0/', // Dynasty
     32: 'https://www.instagram.com/p/C9P5jNRA_nR/', // Erebus
