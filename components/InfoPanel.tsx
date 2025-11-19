@@ -40,7 +40,7 @@ export default function InfoPanel({ item, onClose }: InfoPanelProps) {
     51: 'https://www.instagram.com/p/CINEqAgjY9C/', // Spectre
     52: 'https://www.instagram.com/p/CNIZNPujzZi/',  // Reavers
     53: 'https://www.instagram.com/p/Bj-8quahGCx/', // Maelstrom
-    28: 'https://www.instagram.com/p/CI3clqYjG8c/', // Empyrean
+    28: 'https://www.instagram.com/p/DRKnsPAkZAL/', // Leviathan
     29: 'https://www.instagram.com/p/DQ7Rk8Mkpup/', // Spinal Tap III
     30: 'https://www.instagram.com/p/CqLYWcAjIr7/', // Grove Warden
     31: 'https://www.instagram.com/p/CivBplpDPh0/', // Dynasty

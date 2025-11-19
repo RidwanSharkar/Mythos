@@ -184,15 +184,15 @@ const GALLERY_ITEMS: GalleryItem[] = [
 const INNER_GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 28,
-    title: '𝐸𝓂𝓅𝓎𝓇𝑒𝒶𝓃',
-    description: 'Class: Spellblade\nElement: Arcane\nAlignment: Lawful Neutral',
-    image: '/images/Empyrean.png',
-    elements: ['Martial'],
-    price: 'Set by Byron A.'
+    title: '𝐿𝑒𝓋𝒾𝒶𝓉𝒽𝒶𝓃 II',
+    description: 'Class: Guandao\nElement: Fire\nAlignment: Chaotic Neutral',
+    image: '/images/Leviathan.png',
+    elements: ['Fire'],
+    price: 'Available'
   },
   {
     id: 29,
-    title: 'Spinal Tap III',
+    title: '𝒮𝓅𝒾𝓃𝒶𝓁 𝒯𝒶𝓅 III',
     description: 'Class: Scytheblade\nElement: Necro\nAlignment: Neutral Evil',
     image: '/images/SpinalTap3.png',
     elements: ['Necro'],
