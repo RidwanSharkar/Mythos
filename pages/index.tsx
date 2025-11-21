@@ -188,7 +188,7 @@ const INNER_GALLERY_ITEMS: GalleryItem[] = [
     description: 'Class: Guandao\nElement: Fire\nAlignment: Chaotic Neutral',
     image: '/images/Leviathan.png',
     elements: ['Fire'],
-    price: 'Available'
+    price: 'Set by KRC'
   },
   {
     id: 29,
